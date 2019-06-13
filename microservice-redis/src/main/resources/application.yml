@@ -1,0 +1,54 @@
+server:
+  #服务注册中心端口号
+  port: 6380
+spring:
+  application:
+    name: microservice-redis
+  data: 
+    mongodb:
+      #以安全认证模式连接
+      uri: mongodb://samphin:samphin@192.168.199.98:27022/test
+  datasource: 
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #microservice是自定义数据库名称，可以改，其他保持不变，5.7默认采用SSL配置，如果没有配置，就将useSSL=false
+    url: jdbc:mysql://192.168.199.98:3306/microservice?useUnicode=true&characterEncoding=utf8&useSSL=false&allowMultiQueries=true&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    continueOnError: false   #有了错误是否继续运行
+  jpa:
+      properties:
+        hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+        #控制台打印SQL
+        hibernate.show_sql: true
+        #格式化sql语句
+        hibernate.format_sql: true
+        #指出是什么操作生成了该语句
+        hibernate.use_sql_comments: true
+        #根据表动态生成表结构
+        hibernate.ddl-auto: update
+  redis:
+    # Redis数据库索引(默认为0)
+    database: 0
+    # Redis服务器地址
+    host: 192.168.199.98
+    # Redis服务器连接端口
+    port: 6379
+    # Redis服务器连接密码(默认为空，我现在设置了密码为foobared)
+    password: foobared
+    # Redis连接超时时间（毫秒）
+    timeout: 1000ms
+    pool:
+      jedis:
+        # 连接池最大连接数（使用负值表示没有限制）
+        max-active: 8
+        # 连接池最大阻塞等待时间（使用负值表示没有限制）
+        max-wait: 1000
+        # 连接池中的最大空闲连接
+        max-idle: 8
+        # 连接池中的最小空闲连接
+        min-idle: 0
+logging:
+  file: F:\\logs\\microservice-redis.log
+  org.common.eureka.controller : error
+  level:
+    root: info

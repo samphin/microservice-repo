@@ -1,0 +1,1031 @@
+<!doctype>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="../Script/jquery-1.10.2.min.js"></script>
+    <script src="../config/config.js"></script>
+    <script src="../Script/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../Script/plugins/layui/layui.all.js"></script>
+    <link rel="stylesheet" type="text/css" href="../Script/plugins/layui/css/layui.css">
+    <script src="../Script/plugins/bootstarp-table/bootstrap-table.js"></script>
+    <script src="../Script/plugins/bootstarp-table/locale/bootstrap-table-zh-CN.js"></script>
+    <link rel="stylesheet" type="text/css" href="../Script/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../Script/plugins/bootstarp-table/bootstrap-table.min.css">
+    <script src="../Script/plugins/zTree/js/jquery.ztree.core.js"></script>
+    <script src="../Script/plugins/zTree/js/jquery.ztree.exedit.min.js"></script>
+    <script src="../Script/plugins/zTree/js/jquery.ztree.excheck.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../Script/plugins/zTree/css/zTreeStyle/zTreeStyle.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/button.css">
+    <link rel="stylesheet" type="text/css" href="../css/tree.css">
+    <style>
+        .mainContent {
+            width: 100%;
+            height: 100%;
+            padding: 15px;
+        }
+
+        .leftList {
+            height: 100%;
+            float: left;
+            width: 200px;
+            border: 1px solid #dedede;
+        }
+
+        .title {
+            background: rgb(85, 171, 242);
+            line-height: 32px;
+            color: #fff;
+            padding-left: 20px;
+        }
+
+        .tool-bar {
+            margin: 8px 2px;
+            text-align: center;
+        }
+
+        .tool-bar a:hover {
+            color: #fff;
+        }
+
+        .roleList {
+            margin: 0px;
+            padding: 0px;
+            font-size: 14px;
+            border-top: 1px solid #dedede;
+        }
+
+        .roleList li {
+            list-style-type: none;
+            line-height: 28px;
+            padding-left: 10px;
+            border-bottom: 1px solid #fff;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .roleList li.active, .roleList li:hover {
+            color: #fff;
+            background: #1E9FFF;
+            cursor: pointer;
+        }
+
+        .rightContent {
+            width: calc(100% - 220px);
+            margin-left: 20px;
+            float: left;
+            height: 100%;
+            position: relative;
+        }
+
+        .tab-pane {
+            position: relative;
+        }
+
+        .nav-tabs > li {
+            margin-right: 10px;
+        }
+
+        .nav-tabs > li > a {
+            border: none;
+
+        }
+
+        .nav-tabs > li.active > a {
+            border: none;
+        }
+
+        .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+            border: none;
+        }
+
+        .nav > li > a {
+            padding: 5px 15px;
+        }
+
+        .nav > li > a:focus, .nav > li > a:hover {
+            border-color: transparent;
+            background: transparent;
+        }
+
+        .nav-tabs > li > a:hover {
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .nav-tabs > li > a:before {
+            content: '';
+            position: absolute;
+            bottom: 0px;
+            left: 0%;
+            width: 100%;
+            height: 3px;
+            background: #4ca5ef;
+            -webkit-transform: scale3d(0, 1, 1);
+            transform: scale3d(0, 1, 1);
+            -webkit-transition: -webkit-transform 0.1s;
+            transition: transform 0.1s;
+            z-index: 2;
+        }
+
+        .nav-tabs > li > a:hover:before, .nav-tabs > li.active > a:before {
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+            -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+        }
+
+        .nav-tabs > li.active > a:before {
+            display: none;
+        }
+
+        .nav-tabs > li.active:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 29px;
+            height: 3px;
+            background-color: #4ca5ef;
+        }
+
+        .tab-content {
+            height: calc(100% - 32px);
+            padding: 15px;
+            padding-bottom: 0px;
+        }
+
+        .roleContent {
+            width: calc(50% - 30px);
+            height: 100%;
+            float: left;
+        }
+
+        .roleContent .title {
+            text-align: center;
+        }
+
+        .roleBtnContent {
+            width: 60px;
+            height: 100%;
+            float: left;
+            position: relative;
+            vertical-align: middle;
+        }
+
+        .roleBtnContent .largeBtn {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+        }
+
+        .roleBtnContent .largeBtn:first-child {
+            top: 45%;
+        }
+
+        .roleBtnContent .largeBtn:last-child {
+            top: 55%;
+        }
+
+        .fixed-table-header {
+            display: none !important;
+        }
+
+        .fixed-table-body td {
+            font-size: 12px;
+        }
+
+        .loading-container {
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+        }
+
+        .spinner {
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            font-size: 10px;
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+
+        .spinner > div {
+            background-color: #0883E1;
+            height: 100%;
+            width: 6px;
+            display: inline-block;
+            -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+            animation: stretchdelay 1.2s infinite ease-in-out;
+        }
+
+        .spinner .rect2 {
+            -webkit-animation-delay: -1.1s;
+            animation-delay: -1.1s;
+        }
+
+        .spinner .rect3 {
+            -webkit-animation-delay: -1.0s;
+            animation-delay: -1.0s;
+        }
+
+        .spinner .rect4 {
+            -webkit-animation-delay: -0.9s;
+            animation-delay: -0.9s;
+        }
+
+        .spinner .rect5 {
+            -webkit-animation-delay: -0.8s;
+            animation-delay: -0.8s;
+        }
+
+        @-webkit-keyframes stretchdelay {
+            0%,
+            40%,
+            100% {
+                -webkit-transform: scaleY(0.4)
+            }
+            20% {
+                -webkit-transform: scaleY(1.0)
+            }
+        }
+
+        @keyframes stretchdelay {
+            0%,
+            40%,
+            100% {
+                transform: scaleY(0.4);
+                -webkit-transform: scaleY(0.4);
+            }
+            20% {
+                transform: scaleY(1.0);
+                -webkit-transform: scaleY(1.0);
+            }
+        }
+
+        .searchContent{
+            text-align: right;
+            padding-bottom: 15px;
+        }
+        .searchContent .form-control{
+            display: inline-block;
+            width: 220px;
+        }
+        .gridContent{
+            height: calc(100% - 49px);
+            border: 1px solid #dedede;
+        }
+        .titleHead{
+            border-bottom: 1px solid #dedede;
+            white-space: nowrap;
+            font-size: 14px;
+            padding: 10px;
+            background-color: #eff6fd;
+        }
+        .titleHead span{
+            display: inline-block;
+        }
+        .treeContent{
+            width: 100%;
+            height: calc(100% - 42px);
+            overflow:auto;
+        }
+        .ztree .divTd{
+            display: inline-block;
+        }
+        .ztree{
+            padding: 5px;
+        }
+        .ztree li ul{
+            padding: 0px;
+        }
+        #rMenu{
+            position: absolute;
+            visibility: hidden;
+            top: 0;
+            background-color: #fff;
+            text-align: left;
+            padding: 2px;
+            box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.2);
+        }
+        #rMenu ul {
+            padding: 0px;
+            width: 100px;
+            margin: 0px;
+        }
+        #rMenu ul li{
+            list-style-type: none;
+            font-size: 12px;
+            padding: 5px 0px;
+            padding-left: 15px;
+            cursor: pointer;
+        }
+        #rMenu ul li:hover,#rMenu ul li:active{
+            color:#fff;
+            background: #01AAED;
+        }
+        .addRole{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="mainContent">
+    <div class="leftList">
+        <div class="title">角色列表</div>
+        <div class="tool-bar">
+            <a class="roundBtn round_add" id="add_role" style="background-color: #65b3f1;">新增</a>
+            <a class="roundBtn round_edit" id="edit_role"style="background-color: #f4878c;">修改</a>
+            <a class="roundBtn round_delete" id="delete_role"style="background-color: #9ab8d2;">删除</a>
+        </div>
+        <ul class="roleList"></ul>
+    </div>
+    <div class="rightContent">
+        <div class="loading-container" data-dojo-attach-point="loadingContainer" style="display: block;">
+            <div class="spinner">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+            </div>
+        </div>
+        <ul class="nav nav-tabs" role="tablist" id="tabs">
+            <li role="presentation" class="active"><a href="#userList" aria-controls="userList" role="tab"
+                                                      data-toggle="tab">用户列表</a></li>
+            <li role="presentation"><a href="#root" aria-controls="userList" role="tab" data-toggle="tab">权限设置</a></li>
+        </ul>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="userList">
+                <div class="roleContent">
+                    <div>
+                        <div class="title">从属用户列表</div>
+                        <table id="includeTable"></table>
+                    </div>
+                </div>
+                <div class="roleBtnContent">
+                    <a class="largeBtn btn_left"></a>
+                    <a class="largeBtn btn_right"></a>
+                </div>
+                <div class="roleContent">
+                    <div class="title">未配置用户列表</div>
+                    <table id="exceptTable"></table>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="root">
+                <div class="searchContent">
+                    <a class="normaBtn addBtn" style="float:left" onclick="addRoot()">添加根节点</a>
+                    <a class="normaBtn saveBtn" style="float:left" onclick="saveMenu()">保存</a>
+                    <a class="normaBtn expandBtn" style="float:left" onclick="expandTree(this)">展开全部</a>
+                    <input class="form-control" id="treeSearch" placeholder="请输入菜单名称">
+                </div>
+                <div class="gridContent">
+                <div class="titleHead">
+                    <span style="width: 40%">名称</span>
+                    <span style="width: 20%;min-width: 80px;">&nbsp;</span>
+                    <span style="width: 40%">权限编码</span>
+                </div>
+                    <div class="treeContent">
+                    <ul id="menu" class="ztree"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="rMenu">
+        <ul>
+            <li id="m_add" onclick="addTreeNode();">新增节点</li>
+            <li id="m_edit" onclick="eidtTreeNode();">编辑节点</li>
+            <li id="m_del" onclick="removeTreeNode();">删除节点</li>
+        </ul>
+    </div>
+
+    <div class="addRole">
+        <div style="padding: 15px;">
+        <input class="layui-hide" name="roleId">
+        <div class="layui-form-item">
+            <label class="layui-form-label" style="width:110px;">角色名称</label>
+            <div class="layui-input-block">
+                <input type="text" name="roleName" required lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label" style="width:110px;">首页地址</label>
+            <div class="layui-input-block">
+                <input type="text" name="indexUrl" required lay-verify="required" placeholder="请输入链接地址" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    var layer = layui.layer;
+    var form=layui.form;
+    $(function () {
+        bindEvent();
+        initRoleList();
+    });
+
+    function bindEvent() {
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+           var index=$(e.target).parent("li").index();
+           if(index==0){
+            $("#includeTable").bootstrapTable('refreshOptions',{height:$(".roleContent").height() - $(".roleContent .title").height()});
+            $("#exceptTable").bootstrapTable('refreshOptions',{height:$(".roleContent").height() - $(".roleContent .title").height()});
+           }
+        });
+
+
+        $(".btn_left").click(function () {
+            var data = $("#exceptTable").bootstrapTable('getSelections');
+            if (data.length == 0) return;
+            var userIds = [];
+            for (var i = 0; i < data.length; i++) {
+                userIds.push(data[i].userId);
+            }
+            $.ajax({
+                url: contextPath + '/secRole/addRoleUsers',
+                data: {
+                    roleId: $(".roleList li.active").data("id"),
+                    userIds: userIds.join(",")
+                },
+                success: function (res) {
+                    if (res.resultInfo.code) {
+                        layer.msg("添加用户成功");
+                        initRoleTable();
+                    } else {
+                        layer.msg("添加用户失败");
+                    }
+                }
+            })
+        });
+        $(".btn_right").click(function () {
+            var data = $("#includeTable").bootstrapTable('getSelections');
+            if (data.length == 0) return;
+            var userIds = [];
+            for (var i = 0; i < data.length; i++) {
+                userIds.push(data[i].userId);
+            }
+            $.ajax({
+                url: contextPath + '/secRole/deleteRoleUsers',
+                data: {
+                    roleId: $(".roleList li.active").data("id"),
+                    userIds: userIds.join(",")
+                },
+                success: function (res) {
+                    if (res.resultInfo.code) {
+                        layer.msg("删除用户成功");
+                        initRoleTable();
+                    } else {
+                        layer.msg("删除用户失败");
+                    }
+                }
+            })
+        });
+
+        $("#add_role").click(function(){
+            layer.open({
+                type:1,
+                title:'新增角色',
+                skin:'blue-skin',
+                btn:['确定','取消'],
+                area:['680px','260px'],
+                shade:0,
+                content:$(".addRole"),
+                yes:function(index,layero){
+                    form.on('submit(roleForm)',function(data){
+                        $.ajax({
+                            url:contextPath+"/secRole/saveRole",
+                            data:data.field,
+                            success:function(res){
+                                if (res.resultInfo.code == 0) {
+                                    var $temp = $('<li>' + res.data.roleName + '</li>');
+                                    $temp.data("id", res.data.roleId);
+                                    $temp.data("indexUrl", res.data.indexUrl);
+                                    $temp.bind("click", function () {
+                                        $(this).addClass("active").siblings().removeClass("active");
+                                        $(".loading-container").show();
+                                        initRoleTable();
+                                        initRoleTree();
+                                    });
+                                    $(".roleList").append($temp);
+                                    layer.close(index);
+                                    layer.msg("新增角色成功");
+
+                                } else {
+                                    layer.msg("新增角色失败");
+                                }
+                            }
+                        });
+                        return false;
+                    });
+                },
+                cancel: function(index, layero){
+                    layer.close(index)
+                },
+                success:function(layero,index){
+                    layero.addClass("layui-form").attr("lay-filter","roleForm");
+                    layero.find(".layui-layer-btn0").attr("lay-filter",'roleForm').attr("lay-submit",'');
+                    layero.find(".layui-layer-btn0").addClass("submitBtn");
+                    layero.find(".layui-layer-btn1").addClass("cancelBtn");
+                },
+                end:function(){
+                    $(".addRole").hide();
+                    $('input[name=roleName]').val("");
+                    $('input[name=indexUrl]').val("")
+                }
+            })
+        });
+
+        $("#edit_role").click(function(){
+            if($(".roleList li.active").length<1){
+                layer.msg("请选择角色");
+                return false;
+            }
+            layer.open({
+                type:1,
+                title:'编辑角色',
+                skin:'blue-skin',
+                btn:['确定','取消'],
+                area:['680px','260px'],
+                shade:0,
+                content:$(".addRole"),
+                yes:function(index,layero){
+                    form.on('submit(roleForm)',function(data){
+                        $.ajax({
+                            url:contextPath+"/secRole/saveRole",
+                            data:data.field,
+                            success:function(res){
+                                if (res.resultInfo.code == 0) {
+                                    $(".roleList li.active").html(data.field.roleName);
+                                    $(".roleList li.active").data("indexUrl",data.field.indexUrl);
+                                    layer.close(index);
+                                    layer.msg("修改角色成功");
+
+                                } else {
+                                    layer.msg("修改角色失败");
+                                }
+                            }
+                        });
+                        return false;
+                    });
+                },
+                cancel: function(index, layero){
+                    layer.close(index)
+                },
+                success:function(layero,index){
+                    layero.addClass("layui-form").attr("lay-filter","roleForm");
+                    layero.find(".layui-layer-btn0").attr("lay-filter",'roleForm').attr("lay-submit",'');
+                    layero.find(".layui-layer-btn0").addClass("submitBtn");
+                    layero.find(".layui-layer-btn1").addClass("cancelBtn");
+                    form.render();
+                    form.val("roleForm",{
+                        roleId:$(".roleList li.active").data("id"),
+                        roleName:$(".roleList li.active").text(),
+                        indexUrl:$(".roleList li.active").data("indexUrl"),
+                    })
+                },
+                end:function(){
+                    $(".addRole").hide();
+                    $('input[name=roleName]').val("");
+                    $('input[name=indexUrl]').val("");
+                }
+            })
+        });
+
+        $("#delete_role").click(function(){
+            if($(".roleList li.active").length<1){
+                layer.msg("请选择角色",{time:2000});
+                return false;
+            };
+            layer.confirm("确定删除该角色",{
+                btn:['确定','取消'],
+                skin:'blue-skin',
+                shade:0,
+            },function(){
+                $.ajax({
+                    url: contextPath + '/secRole/deleteRole',
+                    data: {
+                        roleId: $(".roleList li.active").data("id"),
+                    },
+                    success: function (res) {
+                        if (res.resultInfo.code) {
+                            layer.msg("删除用户成功",{time:2000});
+                            if($(".roleList li.active").next().length>0){
+                                $(".roleList li.active").next().click();
+                                $(".roleList li.active").prev().remove();
+                            }else{
+                                $(".roleList li.active").prev().click();
+                                $(".roleList li.active").next().remove();
+                            }
+                        } else {
+                            layer.msg("删除用户失败",{time:2000});
+                        }
+                    }
+                })
+            })
+        });
+    };
+
+    function initRoleTable() {
+        var roleId = $(".roleList li.active").data("id");
+        $.ajax({
+            url: contextPath + "/secRole/getRoleUserList",
+            data: {roleId: roleId},
+            success: function (res) {
+                $(".loading-container").hide();
+                if (res.resultInfo.code == 0) {
+                    var roleData = res.data.roleUsers;
+                    var notRoleData = res.data.notRoleUsers;
+                    initTable("#includeTable", roleData);
+                    initTable("#exceptTable", notRoleData);
+                } else {
+                    layer.msg("获取角色下属用户列表失败",{time:2000});
+                }
+            }
+        })
+    }
+
+    function initRoleTree() {
+        var roleId = $(".roleList li.active").data("id");
+        $.ajax({
+            url:contextPath+"/secRole/getRoleMenuPerm",
+            data: {roleId: roleId},
+            success: function (res) {
+                $(".loading-container").hide();
+                if (res.resultInfo.code == 0) {
+                    var data=res.data;
+                    for(var i=0;i<data.length;i++){
+                        if(data[i].systemType=='GeoShowWorkbench'){
+                            data.splice(i,1);
+                            continue;
+                        }
+                    }
+                   initTree(data);
+                } else {
+                    layer.msg("获取权限失败",{time:2000});
+                }
+            }
+        })
+
+    };
+
+    function initTree(data){
+        var setting={
+            data: {
+                simpleData: {
+                    enable: true,
+                    idKey:'menuId',
+                    pIdKey:'menuParentId',
+                    rootPId:null
+                },
+                key:{
+                    name:'menuName',
+                    checked: "hasMenuPerm"
+                },
+            },
+            edit:{
+                drag:{
+                    isCopy:true,
+                    isMove:true,
+                    inner:true,
+                    prev:true,
+                    next:true,
+                },
+                enable: true,
+                showRemoveBtn: false,
+                showRenameBtn: false
+            },
+            check: {
+                enable:true,
+                chkStyle:'checkbox'
+            },
+            callback:{
+                onRightClick: OnRightClick,
+                beforeDrag: beforeDrag,
+                beforeDrop: beforeDrop
+            },
+            view:{
+                addDiyDom:addDiyDom,
+                txtSelectedEnable:true,
+            }
+        };
+        $.fn.zTree.destroy("menu");
+       var zTreeObj = $.fn.zTree.init($("#menu"), setting, data);
+       var node=zTreeObj.getNodes()[0];
+       zTreeObj.expandNode(node,true);
+    }
+
+    function beforeDrag(treeId, treeNodes) {
+        for (var i=0,l=treeNodes.length; i<l; i++) {
+            if (treeNodes[i].drag === false) {
+                return false;
+            }
+        }
+        return true;
+    }
+    function beforeDrop(treeId, treeNodes, targetNode, moveType) {
+        return targetNode ? targetNode.drop !== false : true;
+    }
+
+    function initTable(selector, data) {
+        $(selector).bootstrapTable('destroy');
+        $(selector).bootstrapTable({
+            url: "", // 请求后台的URL（*）
+            striped: true, // 是否显示行间隔色
+            cache: false, // 是否使用缓存，默认为true，所以一般情况下需要设置一下这个属性（*）
+            pagination: false, // 是否显示分页（*）
+            height: $(".roleContent").height() - $(".roleContent .title").height(),
+            sidePagination: "server", // 服务端请求
+            sortable: false, // 是否启用排序
+            singleSelect: false,
+            sortOrder: "asc", // 排序方式
+            uniqueId: 'userId',// 每一行的唯一标识，一般为主键列
+            pageNumber: 1, // 初始化加载第一页，默认第一页
+            strictSearch: false,
+            showColumns: false, // 是否显示所有的列
+            showRefresh: false, // 是否显示刷新按钮
+            minimumCountColumns: 2, // 最少允许的列数
+            clickToSelect: true, // 是否启用点击选中行
+            showToggle: false, // 是否显示详细视图和列表视图的切换按钮
+            cardView: false, // 是否显示详细视图
+            detailView: false, // 是否显示父子表
+            columns: [
+                {
+                    checkbox: true,
+                },
+                {
+                    field: 'userLoginName',
+                    title: '',
+                    align: 'center',
+                }
+            ],
+            data: data
+        })
+    }
+
+
+    function initRoleList() {
+        $.ajax({
+            url: contextPath + "/secRole/getAllRole",
+            success: function (res) {
+                if (res.resultInfo.code == 0) {
+                    initList(res.data);
+                } else {
+                    layer.msg("获取角色列表失败",{time:2000});
+                }
+            }
+        })
+    }
+
+    function initList(data) {
+        for (var i = 0; i < data.length; i++) {
+            var $temp = $('<li>' + data[i].roleName + '</li>');
+            $temp.data("id", data[i].roleId);
+            $temp.data("indexUrl", data[i].indexUrl);
+            $temp.bind("click", function () {
+                $(this).addClass("active").siblings().removeClass("active");
+                $(".loading-container").show();
+                initRoleTable();
+                initRoleTree();
+            });
+            $(".roleList").append($temp);
+        }
+        $(".roleList li").eq(0).click();
+    }
+
+    function addDiyDom(treeId, treeNode) {
+        var liObj = $("#" + treeNode.tId);
+        var aObj = $("#" + treeNode.tId + "_a");
+        var switchObj = $("#" + treeNode.tId + "_switch");
+        var checkObj=$("#" + treeNode.tId + "_check");
+        //从默认的位置移除
+        switchObj.remove();
+        checkObj.remove();
+        aObj.remove();
+        //在指定的div中添加
+        var editStr = '';
+        editStr += '<div class="divTd" style="width:40%"></div>';
+        editStr += '<div class="divTd" style="width:20%">' + "" + '</div>';
+        editStr += '<div class="divTd" style="width:40%">' + treeNode.menuCode + '</div>';
+        liObj.append(editStr);
+        liObj.find(".divTd").eq(0).css("padding-left",treeNode.level*18);
+        liObj.find(".divTd").eq(0).append(switchObj).append(checkObj).append(aObj);
+        //隐藏了层次的span
+    }
+
+    function saveMenu(){
+        var treeObj = $.fn.zTree.getZTreeObj("menu");
+        var nodes=treeObj.getNodes();
+        treeData= treeObj.transformToArray(nodes);
+        var roleId = $(".roleList li.active").data("id");
+        var permIds=[];
+        for(var i=0;i<treeData.length;i++){
+            permIds.push({permId:treeData[i].permId,menuId:treeData[i].menuId,sortNum:i,hasMenuPerm:treeData[i].hasMenuPerm?1:0});
+        }
+        $.ajax({
+            url: contextPath + "/secRole/saveRoleMenuPerm",
+            data: {roleId: roleId, menuPerms:JSON.stringify(permIds)},
+            type: 'post',
+            success: function (res) {
+                if (res.resultInfo.code == 0) {
+                    layer.msg("保存权限设置成功",{time:2000});
+                }else{
+                    layer.msg("保存权限设置失败",{time:2000})
+                }
+            }
+        });
+    }
+
+
+    function OnRightClick(event, treeId, treeNode) {
+        var zTreeObj=$.fn.zTree.getZTreeObj(treeId);
+        zTreeObj.selectNode(treeNode);
+        showRMenu(event.clientX, event.clientY);
+    }
+
+    function showRMenu(x, y) {
+        var rMenu=$("#rMenu");
+        $("#rMenu ul").show();
+        y += document.body.scrollTop;
+        x += document.body.scrollLeft;
+        rMenu.css({"top":y+"px", "left":x+"px", "visibility":"visible"});
+
+        $("body").bind("mousedown", onBodyMouseDown);
+    }
+    function hideRMenu() {
+        var rMenu=$("#rMenu");
+        if (rMenu) rMenu.css({"visibility": "hidden"});
+        $("body").unbind("mousedown", onBodyMouseDown);
+    }
+    function onBodyMouseDown(event){
+        var rMenu=$("#rMenu");
+        if (!(event.target.id == "rMenu" || $(event.target).parents("#rMenu").length>0)) {
+            rMenu.css({"visibility" : "hidden"});
+        }
+    }
+
+    function addRoot(){
+        layer.open({
+            type:2,
+            content:'menu_add.html',
+            title:'新增根菜单',
+            skin:'blue-skin',
+            closeBtn:1,
+            shade:0,
+            area:['1000px','400px'],
+            yes:function(index,layero){
+
+            },
+            cancel: function(index, layero){
+                layer.close(index)
+            },
+            success:function(layero, index){
+                var body = layer.getChildFrame('body', index);
+                var iframeWin = window[layero.find('iframe')[0]['name']]; //得到iframe页的窗口对象，执行iframe页的方法：
+                var zTreeObj = $.fn.zTree.getZTreeObj('menu');
+                var node=zTreeObj.getSelectedNodes()[0];
+                var formData={};
+                formData.menuParentId="";
+                formData.permId=$(".roleList li.active").data("id");
+                iframeWin.setData(formData);
+                iframeWin.optionType='addRoot';
+            },
+            destroy:function(){
+
+            }
+        })
+    }
+
+    function expandTree(that){
+        var zTreeObj = $.fn.zTree.getZTreeObj('menu');
+        if($(that).hasClass("active")){
+            zTreeObj.expandAll(false);
+            $(that).html("展开全部").removeClass("active");
+        }else{
+            zTreeObj.expandAll(true);
+            $(that).html("收起全部").addClass("active");
+        }
+
+    }
+    function addTreeNode() {
+        hideRMenu();
+        layer.open({
+            type:2,
+            content:'menu_add.html',
+            title:'新增菜单',
+            skin:'blue-skin',
+            closeBtn:1,
+            shade:0,
+            area:['1000px','400px'],
+            yes:function(index,layero){
+
+            },
+            cancel: function(index, layero){
+                layer.close(index)
+            },
+            success:function(layero, index){
+                var body = layer.getChildFrame('body', index);
+                var iframeWin = window[layero.find('iframe')[0]['name']]; //得到iframe页的窗口对象，执行iframe页的方法：
+                var zTreeObj = $.fn.zTree.getZTreeObj('menu');
+                var node=zTreeObj.getSelectedNodes()[0];
+                var formData={};
+                formData.menuParentId=node.menuId;
+                formData.permId=$(".roleList li.active").data("id");
+                iframeWin.setData(formData);
+                iframeWin.optionType='addNode';
+            },
+            destroy:function(){
+
+            }
+        })
+    }
+
+
+    function eidtTreeNode(){
+        hideRMenu();
+        layer.open({
+            type:2,
+            content:'menu_add.html',
+            title:'编辑菜单',
+            skin:'blue-skin',
+            closeBtn:1,
+            shade:0,
+            area:['1000px','400px'],
+            yes:function(index,layero){
+
+            },
+            cancel: function(index, layero){
+                layer.close(index)
+            },
+            success:function(layero, index){
+                var body = layer.getChildFrame('body', index);
+                var iframeWin = window[layero.find('iframe')[0]['name']]; //得到iframe页的窗口对象，执行iframe页的方法：
+                var zTreeObj = $.fn.zTree.getZTreeObj('menu');
+                var node=zTreeObj.getSelectedNodes()[0];
+                node.permId=$(".roleList li.active").data("id");
+                iframeWin.setData(node);
+                iframeWin.optionType='editNode';
+            },
+            destroy:function(){
+
+            }
+        })
+    }
+
+    function updateTreeNode(data,type){
+        var zTreeObj = $.fn.zTree.getZTreeObj('menu');
+        var currentNode=zTreeObj.getSelectedNodes()[0];
+        if(type=='addNode'){
+            zTreeObj.addNodes(currentNode, data);
+        }else if(type=='addRoot'){
+            zTreeObj.addNodes(null, data);
+        }else if(type=='editNode'){
+            node=$.extend(currentNode,data);
+            zTreeObj.updateNode(node);
+        }
+    }
+
+    function removeTreeNode() {
+        hideRMenu();
+        var zTreeObj = $.fn.zTree.getZTreeObj('menu');
+        var node = zTreeObj.getSelectedNodes()[0];
+        var msg="是否删除该节点？"
+        if(node.isParent){
+            msg='删除该菜单将删除此菜单下的所有子菜单，是否继续？'
+        }
+        layer.confirm(msg,{
+            btn:['确定','取消'],
+            skin:'blue-skin',
+            shade:0,
+        },function(){
+            $.ajax({
+                url: contextPath + '/secMenuPerm/deleteMenuPerms',
+                data: {
+                    menuId: node.menuId,
+                    permId:$(".roleList li.active").data("id")
+                },
+                success: function (res) {
+                    if (res.resultInfo.code) {
+                        zTreeObj.removeChildNodes(node);
+                        zTreeObj.removeNode(node);
+                        layer.msg("删除菜单成功",{time:2000});
+                    } else {
+                        layer.msg("删除菜单失败",{time:2000});
+                    }
+                }
+            })
+        })
+    }
+
+</script>
+</html>

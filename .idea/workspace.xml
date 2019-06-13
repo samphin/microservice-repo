@@ -1,0 +1,1248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutomaticModuleUnloader">
+    <loaded-modules>
+      <module name="microservice-redis" />
+      <module name="microservice-server" />
+      <module name="microservice-user" />
+      <module name="microservice-archive-feign" />
+      <module name="microservice-archive-feign-trace" />
+    </loaded-modules>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dd8cc6c4-dc4a-44b4-a86a-e36b851eace1" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/microservice-redis/target/" />
+    <ignored path="$PROJECT_DIR$/microservice-server/target/" />
+    <ignored path="$PROJECT_DIR$/microservice-user/target/" />
+    <ignored path="$PROJECT_DIR$/microservice-archive-feign-trace/target/" />
+    <ignored path="$PROJECT_DIR$/microservice-archive-feign/target/" />
+    <ignored path="$PROJECT_DIR$/microservice-archive-feign-trace-elk/target/" />
+    <ignored path="$PROJECT_DIR$/microservice-archive-ribbon/target/" />
+    <ignored path="$PROJECT_DIR$/microservice-config-server/target/" />
+    <ignored path="$PROJECT_DIR$/microservice-mongo/target/" />
+    <ignored path="$PROJECT_DIR$/microservice-zuul/target/" />
+    <ignored path="$PROJECT_DIR$/microservice-user8002/target/" />
+    <ignored path="$PROJECT_DIR$/microservice-rabbit-consumer/target/" />
+    <ignored path="$PROJECT_DIR$/microservice-hystrix/target/" />
+    <ignored path="$PROJECT_DIR$/microservice-hystrix-mq/target/" />
+    <ignored path="$PROJECT_DIR$/microservice-turbine-monitor/target/" />
+    <ignored path="$PROJECT_DIR$/microservice-config-client/target/" />
+    <ignored path="$PROJECT_DIR$/microservice-rabbit/target/" />
+    <ignored path="$PROJECT_DIR$/microservice-config-client-archive/target/" />
+    <ignored path="$PROJECT_DIR$/microservice-jta/target/" />
+    <ignored path="$PROJECT_DIR$/microservice-config-client-refresh/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/microservice-config-client-refresh-cloud-bus3/target/" />
+    <ignored path="$PROJECT_DIR$/microservice-trace-zipkin-server/target/" />
+    <ignored path="$PROJECT_DIR$/microservice-turbine-monitor-mq/target/" />
+    <ignored path="$PROJECT_DIR$/microservice-zuul-aggregation/target/" />
+    <ignored path="$PROJECT_DIR$/microservice-user8003/target/" />
+    <ignored path="$PROJECT_DIR$/microservice-rabbit-archive/target/" />
+    <ignored path="$PROJECT_DIR$/microservice-config-client-refresh-cloud-bus2/target/" />
+    <ignored path="$PROJECT_DIR$/microservice-server-security/target/" />
+    <ignored path="$PROJECT_DIR$/microservice-user8001/target/" />
+    <ignored path="$PROJECT_DIR$/microservice-config-client-refresh-cloud-bus/target/" />
+    <ignored path="$PROJECT_DIR$/microservice-solr/target/" />
+    <ignored path="$PROJECT_DIR$/java-study/target/" />
+    <ignored path="$PROJECT_DIR$/microservice-elasticsearch/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/eclipse_workspace$ElasticSearchClientTest_initClientTest.ic" NAME="ElasticSearchClientTest.initClientTest Coverage Results" MODIFIED="1559465601951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.samphin.stu.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1590916160">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="17" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.44" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.52" value="1" />
+          <entry key="project.open.time.55" value="2" />
+          <entry key="project.open.time.60" value="1" />
+          <entry key="project.open.time.64" value="1" />
+          <entry key="project.open.time.65" value="2" />
+          <entry key="project.open.time.66" value="1" />
+          <entry key="project.open.time.68" value="1" />
+          <entry key="project.open.time.78" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.88" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="17" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="83" />
+          <entry key="factories" value="3" />
+          <entry key="factorypath" value="3" />
+          <entry key="gitignore" value="1" />
+          <entry key="iml" value="10" />
+          <entry key="ini" value="1" />
+          <entry key="java" value="350" />
+          <entry key="txt" value="2" />
+          <entry key="xml" value="210" />
+          <entry key="xsd" value="1" />
+          <entry key="yml" value="59" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="83" />
+          <entry key="IDEA_MODULE" value="10" />
+          <entry key="JAVA" value="350" />
+          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="XML" value="211" />
+          <entry key="YAML" value="59" />
+          <entry key="spring.factories" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="143" />
+          <entry key="gitignore" value="7" />
+          <entry key="iml" value="27" />
+          <entry key="java" value="7864" />
+          <entry key="txt" value="47" />
+          <entry key="xml" value="2141" />
+          <entry key="yml" value="1537" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="IDEA_MODULE" value="27" />
+          <entry key="JAVA" value="7864" />
+          <entry key="PLAIN_TEXT" value="197" />
+          <entry key="XML" value="2141" />
+          <entry key="YAML" value="1537" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="960923412">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="microservice-repo" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>org.common.eureka</find>
+      <find>&lt;groupId&gt;org.common.eureka&lt;/groupId&gt;</find>
+      <find>cache</find>
+      <find>mongodb</find>
+      <find>customConversions</find>
+      <find>redis</find>
+      <find>*</find>
+      <find>mysql</find>
+      <find>servlet</find>
+      <find>amqp</find>
+      <find>Guimu</find>
+      <find>com.yy.elasticsearch</find>
+      <find>chenyongfeng</find>
+      <find>org.samphin.stu</find>
+      <find>CURRENT_MODEL_PACKAGE_NAME</find>
+      <find>guava</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>org.samphin.stu</replace>
+      <replace>samphin</replace>
+      <replace>org.sam.stu</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>F:\microservice-repo\microservice-user</dir>
+      <dir>F:\microservice-repo\microservice-archive-feign-trace-elk</dir>
+      <dir>F:\microservice-repo</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/microservice-archive-feign/src/main/java/org/common/eureka/dto/UserDto.java" />
+        <option value="$PROJECT_DIR$/microservice-archive-feign/src/main/java/org/common/eureka/controller/ArchivesController.java" />
+        <option value="$PROJECT_DIR$/microservice-archive-feign/src/main/java/org/common/eureka/ArchivesSystemFeignClientApplication.java" />
+        <option value="$PROJECT_DIR$/microservice-archive-feign/src/main/java/org/common/eureka/interfaces/impl/FeignClientFallbakFactory.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-archive-feign/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/microservice-user8002/src/main/java/org/common/eureka/entity/SecUser.java" />
+        <option value="$PROJECT_DIR$/microservice-user8002/src/main/java/org/common/eureka/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/microservice-user8001/src/main/java/org/common/eureka/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/microservice-user8001/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/microservice-archive-feign/src/main/main.iml" />
+        <option value="$PROJECT_DIR$/microservice-archive-feign/src/main/java/org/common/eureka/vo/UserVo.java" />
+        <option value="$PROJECT_DIR$/microservice-archive-feign/src/main/java/org/common/eureka/vo/SingletonInner.java" />
+        <option value="$PROJECT_DIR$/java-study/src/main/java/org/samphin/stu/vo/Car.java" />
+        <option value="$PROJECT_DIR$/microservice-archive-feign-trace/src/main/java/org/common/eureka/interfaces/UserFeignClient.java" />
+        <option value="$PROJECT_DIR$/microservice-archive-feign-trace-elk/src/main/main.iml" />
+        <option value="$PROJECT_DIR$/microservice-archive-feign-trace/src/main/main.iml" />
+        <option value="$PROJECT_DIR$/microservice-archive-feign-trace-elk/src/main/java/org/common/eureka/interfaces/UserFeignClient.java" />
+        <option value="$PROJECT_DIR$/microservice-archive-feign-trace-elk/src/main/java/org/common/eureka/interfaces/impl/FeignClientFallbackFactory.java" />
+        <option value="$PROJECT_DIR$/microservice-archive-feign/src/main/java/org/common/eureka/interfaces/impl/FeignClientFallbackFactory.java" />
+        <option value="$PROJECT_DIR$/microservice-archive-feign-trace/src/main/java/org/common/eureka/interfaces/impl/FeignClientFallbackFactory.java" />
+        <option value="$PROJECT_DIR$/microservice-archive-feign/src/main/java/org/common/eureka/interfaces/UserFeignClient.java" />
+        <option value="$PROJECT_DIR$/microservice-archive-feign/src/main/java/org/common/eureka/controller/ArchivesFeignController.java" />
+        <option value="$PROJECT_DIR$/microservice-archive-feign/src/main/java/org/common/eureka/service/ArchiveService.java" />
+        <option value="$PROJECT_DIR$/java-study/src/main/java/org/samphin/stu/practise/Father.java" />
+        <option value="$PROJECT_DIR$/java-study/src/main/java/org/samphin/stu/practise/Son.java" />
+        <option value="$PROJECT_DIR$/java-study/src/main/java/org/samphin/stu/vo/UserVo.java" />
+        <option value="$PROJECT_DIR$/java-study/src/main/java/org/samphin/stu/vo/Singleton2.java" />
+        <option value="$PROJECT_DIR$/java-study/src/main/java/org/samphin/stu/vo/SingletonInner.java" />
+        <option value="$PROJECT_DIR$/java-study/src/main/java/org/samphin/stu/vo/ArrayTest.java" />
+        <option value="$PROJECT_DIR$/microservice-elasticsearch/src/main/java/org/samphin/stu/App.java" />
+        <option value="$PROJECT_DIR$/microservice-elasticsearch/src/main/java/org/samphin/stu/ElasticSearchServerApp.java" />
+        <option value="$PROJECT_DIR$/microservice-elasticsearch/src/test/java/org/samphin/stu/AppTest.java" />
+        <option value="$PROJECT_DIR$/microservice-elasticsearch/src/test/java/org/samphin/stu/bean/ESClientSpringFactory.java" />
+        <option value="$PROJECT_DIR$/microservice-elasticsearch/src/test/java/org/samphin/stu/bean/ESClientFactory.java" />
+        <option value="$PROJECT_DIR$/microservice-elasticsearch/src/test/java/org/samphin/stu/config/ESConfig.java" />
+        <option value="$PROJECT_DIR$/microservice-elasticsearch/src/main/java/org/samphin/stu/bean/ESClientSpringFactory.java" />
+        <option value="$PROJECT_DIR$/java-study/pom.xml" />
+        <option value="$PROJECT_DIR$/java-study/src/main/java/org/samphin/stu/lambda/ListNewUsage.java" />
+        <option value="$PROJECT_DIR$/microservice-elasticsearch/src/test/java/org/samphin/stu/ElasticSearchQueryTest.java" />
+        <option value="$PROJECT_DIR$/microservice-elasticsearch/src/main/java/org/samphin/stu/vo/Food.java" />
+        <option value="$PROJECT_DIR$/microservice-elasticsearch/src/test/java/org/samphin/stu/ElasticSearchInsertTest.java" />
+        <option value="$PROJECT_DIR$/microservice-elasticsearch/src/main/java/org/samphin/stu/bean/Base.java" />
+        <option value="$PROJECT_DIR$/microservice-elasticsearch/src/main/java/org/samphin/stu/model/Base.java" />
+        <option value="$PROJECT_DIR$/microservice-elasticsearch/src/main/java/org/samphin/stu/util/EsUtils.java" />
+        <option value="$PROJECT_DIR$/microservice-elasticsearch/src/main/java/org/samphin/stu/model/Food.java" />
+        <option value="$PROJECT_DIR$/microservice-elasticsearch/src/main/java/org/samphin/stu/config/ESConfig.java" />
+        <option value="$PROJECT_DIR$/microservice-elasticsearch/src/test/java/org/samphin/stu/ElasticSearchClientTest.java" />
+        <option value="$PROJECT_DIR$/microservice-elasticsearch/pom.xml" />
+        <option value="$PROJECT_DIR$/microservice-elasticsearch/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="java-study" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="java-study" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="698" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="microservice-workspace" type="b2602c69:ProjectViewProjectNode" />
+              <item name="microservice-workspace" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="SearchEverywhereHistoryKey" value="Base&#9;PSI&#9;JAVA://com.fasterxml.jackson.annotation.ObjectIdGenerators.Base&#10;BeanFatory&#9;null&#9;null" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560431994233" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.3352804" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.samphin.stu" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.samphin.stu.model" />
+      <recent name="org.samphin.stu" />
+      <recent name="org.samphin.stu.config" />
+      <recent name="org.samphin.stu.vo" />
+      <recent name="org.common.eureka.dto" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\microservice-repo\microservice-elasticsearch\src\main\java\org\samphin\stu" />
+      <recent name="F:\microservice-repo\java-study\src\main\java\org\samphin\stu\vo" />
+      <recent name="F:\microservice-repo" />
+      <recent name="F:\microservice-repo\microservice-mongo\src\test\java\org\samphin\stu" />
+      <recent name="F:\microservice-repo\microservice-jta\src\main\java\org\sam\stu\entity" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.ElasticSearchClientTest.createIndexTest">
+    <configuration name="RedisApplication" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.common.eureka.RedisApplication" />
+      <module name="microservice-redis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.common.eureka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ElasticSearchClientTest.createIndexTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="microservice-elasticsearch" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.samphin.stu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.samphin.stu" />
+      <option name="MAIN_CLASS_NAME" value="org.samphin.stu.ElasticSearchClientTest" />
+      <option name="METHOD_NAME" value="createIndexTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ElasticSearchInsertTest.createDocTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="microservice-elasticsearch" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.samphin.stu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.samphin.stu" />
+      <option name="MAIN_CLASS_NAME" value="org.samphin.stu.ElasticSearchInsertTest" />
+      <option name="METHOD_NAME" value="createDocTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ListNewUsage.reduceListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.samphin.stu.lambda.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.samphin.stu.lambda" />
+      <option name="MAIN_CLASS_NAME" value="org.samphin.stu.lambda.ListNewUsage" />
+      <option name="METHOD_NAME" value="reduceListTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ListNewUsage.reduceListTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.samphin.stu.lambda.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.samphin.stu.lambda" />
+      <option name="MAIN_CLASS_NAME" value="org.samphin.stu.lambda.ListNewUsage" />
+      <option name="METHOD_NAME" value="reduceListTest2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ListNewUsage.sortListTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-study" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.samphin.stu.lambda.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.samphin.stu.lambda" />
+      <option name="MAIN_CLASS_NAME" value="org.samphin.stu.lambda.ListNewUsage" />
+      <option name="METHOD_NAME" value="sortListTest2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="microservice-repo" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="microservice-repo" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArchivesRibbonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="microservice-archive-ribbon" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.common.eureka.ArchivesRibbonApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArchivesSystemApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="microservice-archive-feign-trace-elk" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.common.eureka.ArchivesSystemApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArchivesSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="microservice-archive-feign" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.common.eureka.ArchivesSystemFeignClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArchivesSystemFeignClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="microservice-archive-feign" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.common.eureka.ArchivesSystemFeignClientApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="microservice-config-client-refresh" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.common.eureka.ConfigClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ElasticSearchServerApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="microservice-elasticsearch" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.samphin.stu.ElasticSearchServerApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaSecurityServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="microservice-server-security" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.common.eureka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.common.eureka.EurekaSecurityServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="microservice-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.common.eureka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.common.eureka.EurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HystrixApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="microservice-hystrix" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.common.eureka.HystrixApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RabbitArchiveApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="microservice-rabbit-archive" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.common.eureka.RabbitArchiveApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RabbitConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="microservice-rabbit-consumer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.common.eureka.RabbitConsumerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RabbitProducerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="microservice-rabbit" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.common.eureka.RabbitProducerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="microservice-redis" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.common.eureka.RedisApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TurbineApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="microservice-turbine-monitor-mq" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.common.eureka.TurbineApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserSystemApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="microservice-user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.common.eureka.UserSystemApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="microservice-user8003" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.common.eureka.UserSystem8003Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserSystemApplication8001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="microservice-user8001" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.common.eureka.UserSystem8001Application" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserSystemApplication8002" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="microservice-user8002" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.common.eureka.UserSystem8002Application" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserSystemApplication8003" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="microservice-user8003" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.common.eureka.UserSystem8003Application" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZipkinServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="microservice-trace-zipkin-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.common.eureka.ZipkinServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZuulApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="microservice-zuul-aggregation" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.common.eureka.ZuulApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.RedisApplication" />
+      <item itemvalue="Spring Boot.UserSystemApplication8003" />
+      <item itemvalue="Spring Boot.UserSystemApplication8001" />
+      <item itemvalue="Spring Boot.UserSystemApplication8002" />
+      <item itemvalue="Spring Boot.ZipkinServerApplication" />
+      <item itemvalue="Spring Boot.ConfigClientApplication" />
+      <item itemvalue="Spring Boot.RabbitArchiveApplication" />
+      <item itemvalue="Spring Boot.ArchivesSystemApplication" />
+      <item itemvalue="Spring Boot.ArchivesRibbonApplication" />
+      <item itemvalue="Spring Boot.RabbitConsumerApplication" />
+      <item itemvalue="Spring Boot.TurbineApplication" />
+      <item itemvalue="Spring Boot.UserSystemApplication" />
+      <item itemvalue="Spring Boot.ZuulApplication" />
+      <item itemvalue="Spring Boot.RedisApplication" />
+      <item itemvalue="Spring Boot.RabbitProducerApplication" />
+      <item itemvalue="Spring Boot.HystrixApplication" />
+      <item itemvalue="Spring Boot.ArchivesSystemFeignClientApplication" />
+      <item itemvalue="Spring Boot.EurekaServerApplication" />
+      <item itemvalue="Spring Boot.EurekaSecurityServerApplication" />
+      <item itemvalue="Spring Boot.UserSystemApplication (1)" />
+      <item itemvalue="Spring Boot.ArchivesSystemApplication (1)" />
+      <item itemvalue="Spring Boot.ElasticSearchServerApp" />
+      <item itemvalue="JUnit.ListNewUsage.sortListTest2" />
+      <item itemvalue="JUnit.ListNewUsage.reduceListTest" />
+      <item itemvalue="JUnit.ListNewUsage.reduceListTest2" />
+      <item itemvalue="JUnit.ElasticSearchInsertTest.createDocTest" />
+      <item itemvalue="JUnit.ElasticSearchClientTest.createIndexTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ElasticSearchClientTest.createIndexTest" />
+        <item itemvalue="JUnit.ElasticSearchInsertTest.createDocTest" />
+        <item itemvalue="JUnit.ListNewUsage.reduceListTest2" />
+        <item itemvalue="JUnit.ListNewUsage.reduceListTest" />
+        <item itemvalue="JUnit.ListNewUsage.sortListTest2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dd8cc6c4-dc4a-44b4-a86a-e36b851eace1" name="Default Changelist" comment="" />
+      <created>1557390587021</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1557390587021</updated>
+      <workItem from="1557390591056" duration="509000" />
+      <workItem from="1557391698584" duration="2534000" />
+      <workItem from="1557394465443" duration="1823000" />
+      <workItem from="1557635735412" duration="3207000" />
+      <workItem from="1557915790756" duration="1195000" />
+      <workItem from="1557924891634" duration="2380000" />
+      <workItem from="1558188177605" duration="53443000" />
+      <workItem from="1558488817458" duration="4593000" />
+      <workItem from="1558704301941" duration="40398000" />
+      <workItem from="1559452708665" duration="5967000" />
+      <workItem from="1559485031581" duration="5311000" />
+      <workItem from="1559573665090" duration="3583000" />
+      <workItem from="1559661088852" duration="1502000" />
+      <workItem from="1559749547487" duration="758000" />
+      <workItem from="1559950571004" duration="4621000" />
+      <workItem from="1560342886006" duration="8449000" />
+      <workItem from="1560428656571" duration="1116000" />
+      <workItem from="1560432373884" duration="1119000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="ListNewUsage_filterListContentTest - 2019.06.03 at 23h 55m 49s.xml">
+      <configuration name="ListNewUsage.filterListContentTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ListNewUsage_sortListTest - 2019.06.04 at 00h 00m 19s.xml">
+      <configuration name="ListNewUsage.sortListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ListNewUsage_sortListTest2 - 2019.06.04 at 00h 05m 46s.xml">
+      <configuration name="ListNewUsage.sortListTest2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ListNewUsage_sortListTest2 - 2019.06.04 at 00h 06m 47s.xml">
+      <configuration name="ListNewUsage.sortListTest2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ListNewUsage_sortListTest2 - 2019.06.04 at 00h 14m 20s.xml">
+      <configuration name="ListNewUsage.sortListTest2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ListNewUsage_sortListTest2 - 2019.06.04 at 00h 17m 03s.xml">
+      <configuration name="ListNewUsage.sortListTest2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ListNewUsage_reduceListTest - 2019.06.04 at 00h 22m 55s.xml">
+      <configuration name="ListNewUsage.reduceListTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ListNewUsage_reduceListTest2 - 2019.06.04 at 00h 24m 54s.xml">
+      <configuration name="ListNewUsage.reduceListTest2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ElasticSearchClientTest_createIndexTest - 2019.06.12 at 22h 45m 09s.xml">
+      <configuration name="ElasticSearchClientTest.createIndexTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ElasticSearchClientTest_createIndexTest - 2019.06.12 at 22h 47m 45s.xml">
+      <configuration name="ElasticSearchClientTest.createIndexTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="142508000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.68421054" visible="true" weight="0.24130106" />
+      <window_info id="Structure" order="1" sideWeight="0.31578946" side_tool="true" weight="0.27836612" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.18699187" side_tool="true" weight="0.20726173" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.075806454" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.15806451" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.57564294" weight="0.1" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.55673224" weight="0.3419355" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.48225805" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.5400908" visible="true" weight="0.32419354" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.45990923" side_tool="true" weight="0.32419354" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Spring" order="12" weight="0.28064516" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32903227" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.44024205" />
+      <window_info anchor="right" id="CDI" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" weight="0.32980332" />
+      <window_info anchor="right" id="Coverage" order="11" side_tool="true" visible="true" weight="0.055219363" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/tx-lcn" />
+      <path value="F:\microservice-repo\designpattern" />
+    </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/microservice-archive-feign/src/main/java/org/common/eureka/service/ArchiveService.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/microservice-user8002/src/main/java/org/common/eureka/controller/UserController.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/microservice-user8001/src/main/java/org/common/eureka/controller/UserController.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/microservice-user8001/src/main/java/org/common/eureka/controller/UserController.java</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/microservice-user8001/src/main/java/org/common/eureka/controller/UserController.java</url>
+          <line>47</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/microservice-user8001/src/main/java/org/common/eureka/controller/UserController.java</url>
+          <line>36</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/microservice-archive-feign/src/main/java/org/common/eureka/controller/ArchivesFeignController.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/java-study/src/main/java/org/samphin/stu/vo/IOTest.java" />
+    <entry file="file://$PROJECT_DIR$/java-study/src/main/java/org/samphin/stu/vo/Singleton1.java" />
+    <entry file="file://$PROJECT_DIR$/java-study/src/main/java/org/samphin/stu/vo/Singleton2.java" />
+    <entry file="file://$PROJECT_DIR$/java-study/src/main/java/org/samphin/stu/vo/SingletonInner.java" />
+    <entry file="file://$PROJECT_DIR$/java-study/src/main/java/org/samphin/stu/vo/ArrayTest.java" />
+    <entry file="file://$PROJECT_DIR$/java-study/src/main/java/org/samphin/stu/vo/VehicleFactory.java" />
+    <entry file="file://$PROJECT_DIR$/microservice-user/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="39" lean-forward="true" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-user8001/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="18" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-server-security/src/main/java/org/common/eureka/EurekaSecurityServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="8" column="46" lean-forward="true" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/repo/org/elasticsearch/elasticsearch-x-content/6.8.0/elasticsearch-x-content-6.8.0.jar!/org/elasticsearch/common/xcontent/XContent.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/repo/org/elasticsearch/elasticsearch/6.8.0/elasticsearch-6.8.0.jar!/org/elasticsearch/action/get/GetRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-elasticsearch/src/test/java/org/samphin/stu/bean/ESClientFactory.java" />
+    <entry file="file://$PROJECT_DIR$/microservice-elasticsearch/src/test/java/org/samphin/stu/bean/ESClientSpringFactory.java" />
+    <entry file="file://$PROJECT_DIR$/microservice-elasticsearch/src/test/java/org/samphin/stu/config/ESConfig.java" />
+    <entry file="file://$PROJECT_DIR$/microservice-elasticsearch/src/main/java/org/samphin/stu/bean/ESClientFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-elasticsearch/src/main/java/org/samphin/stu/ElasticSearchServerApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/repo/org/apache/httpcomponents/httpcore/4.4.10/httpcore-4.4.10.jar!/org/apache/http/HttpHost.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/repo/org/elasticsearch/client/elasticsearch-rest-client/6.4.3/elasticsearch-rest-client-6.4.3.jar!/org/elasticsearch/client/RestClientBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/repo/org/elasticsearch/client/elasticsearch-rest-high-level-client/6.8.0/elasticsearch-rest-high-level-client-6.8.0.jar!/org/elasticsearch/client/indices/CreateIndexRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="50" column="11" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/repo/org/elasticsearch/client/elasticsearch-rest-client/6.4.3/elasticsearch-rest-client-6.4.3.jar!/org/elasticsearch/client/RequestOptions.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4180">
+          <caret line="220" column="19" selection-start-line="220" selection-start-column="19" selection-end-line="220" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-study/src/main/java/org/samphin/stu/practise/Father.java" />
+    <entry file="file://$PROJECT_DIR$/java-study/src/main/java/org/samphin/stu/practise/Son.java" />
+    <entry file="file://$PROJECT_DIR$/java-study/src/main/java/org/samphin/stu/App.java" />
+    <entry file="file://$PROJECT_DIR$/java-study/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/java-study/src/main/java/org/samphin/stu/lambda/ListNewUsage.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/src.zip!/java/lang/annotation/Documented.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-elasticsearch/src/main/java/org/samphin/stu/vo/Food.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="44" column="15" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-elasticsearch/src/test/java/org/samphin/stu/ElasticSearchQueryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-elasticsearch/src/test/java/org/samphin/stu/ElasticSearchInsertTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="39" column="23" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/repo/org/elasticsearch/elasticsearch/6.8.0/elasticsearch-6.8.0.jar!/org/elasticsearch/action/index/IndexRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="62" column="11" selection-start-line="62" selection-start-column="11" selection-end-line="62" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/repo/org/elasticsearch/elasticsearch/6.8.0/elasticsearch-6.8.0.jar!/org/elasticsearch/common/UUIDs.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/repo/org/projectlombok/lombok/1.18.4/lombok-1.18.4.jar!/lombok/Data.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/src.zip!/java/lang/annotation/Retention.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="42" column="7" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/repo/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar!/com/fasterxml/jackson/annotation/ObjectIdGenerators.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="87" column="25" selection-start-line="87" selection-start-column="25" selection-end-line="87" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-elasticsearch/src/main/java/org/samphin/stu/bean/Base.java" />
+    <entry file="jar://E:/maven/repo/com/alibaba/fastjson/1.2.47/fastjson-1.2.47.jar!/com/alibaba/fastjson/JSON.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="741" column="24" selection-start-line="741" selection-start-column="24" selection-end-line="741" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/repo/org/elasticsearch/client/elasticsearch-rest-high-level-client/6.8.0/elasticsearch-rest-high-level-client-6.8.0.jar!/org/elasticsearch/client/RestHighLevelClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="141" column="13" selection-start-line="141" selection-start-column="13" selection-end-line="141" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/repo/org/elasticsearch/elasticsearch/6.8.0/elasticsearch-6.8.0.jar!/org/elasticsearch/action/update/UpdateRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="84" column="11" selection-start-line="84" selection-start-column="11" selection-end-line="84" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-elasticsearch/src/main/java/org/samphin/stu/model/Food.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-elasticsearch/microservice-elasticsearch.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-elasticsearch/src/main/java/org/samphin/stu/model/Base.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-elasticsearch/src/main/java/org/samphin/stu/util/EsUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1073">
+          <caret line="212" column="4" selection-start-line="212" selection-start-column="4" selection-end-line="212" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-elasticsearch/src/main/java/org/samphin/stu/bean/ESClientSpringFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-mongo/src/test/java/org/samphin/stu/GeneratorOrdersTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-elasticsearch/src/main/java/org/samphin/stu/config/ESConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="30" column="43" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-elasticsearch/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-elasticsearch/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-elasticsearch/src/test/java/org/samphin/stu/ElasticSearchClientTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="66" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_16_0.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3352804" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web (microservice-archive-feign-trace)|Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3352804" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3352804" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3352804" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>microservice-elasticsearch</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3352804" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3352804" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <last-edited>111</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3352804" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="" />
+  </component>
+</project>

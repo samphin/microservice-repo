@@ -1,0 +1,22 @@
+server:
+  #服务注册中心端口号
+  port: 8031
+eureka:
+  instance:
+    #服务注册中心实例的主机名
+    hostname: localhost
+    #表示将自己IP注册到服务中心
+    prefer-ip-address: true
+    #自定义元数据,key/value都可以随便写
+  client:
+    service-url:
+      #服务注册中心的配置内容，指定服务注册中心的位置
+      defaultZone: http://samphin:samphin123@localhost:8787/eureka/
+
+spring:
+  application:
+    name: TurbineMonitors
+turbine:
+  #监控档案系统微服务、用户系统微服务、、多个以逗号隔开artifactId即可
+  app-config: EurekeArchiveSystem,HystrixSystem
+  cluster-name-expression: "'default'"

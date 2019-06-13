@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>菜单详细信息</title>
+    <script src="../Script/jquery-1.10.2.min.js"></script>
+    <script src="../config/config.js"></script>
+    <script src="../Script/plugins/layui/layui.js"></script>
+    <script src="../js/Util.js"></script>
+    <link rel="stylesheet" type="text/css" href="../Script/plugins/layui/css/layui.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+
+    <style>
+        .layui-form-label {
+            width: 90px;
+        }
+
+        .layui-input-block {
+            margin-left: 130px;
+        }
+    </style>
+</head>
+<body>
+<form class="layui-form" lay-filter="node" id="nodeForm" action="" style="padding: 15px;">
+    <input type="text" name="menuId" placeholder="" autocomplete="off" class="layui-input layui-hide">
+    <input type="text" name="permId" placeholder="" autocomplete="off" class="layui-input layui-hide">
+    <input type="text" name="menuParentId" placeholder="" autocomplete="off" class="layui-input layui-hide">
+    <div class="layui-form-item">
+        <label class="layui-form-label">菜单名称</label>
+        <div class="layui-input-block">
+            <input type="text" name="menuName" required lay-verify="required" placeholder="" autocomplete="off"
+                   class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">菜单链接</label>
+        <div class="layui-input-block">
+            <input type="text" name="menuUrl" placeholder="" autocomplete="off"
+                   class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">菜单备注</label>
+        <div class="layui-input-block">
+            <input type="text" name="menuRemark" placeholder="" autocomplete="off"
+                   class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">图标地址</label>
+        <div class="layui-input-block">
+            <input type="text" name="menuIcon" placeholder="请输入项目下路径"
+                   autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-input-block" style="text-align: right;">
+            <button class="layui-btn submitBtn" lay-submit lay-filter="*">确定</button>
+            <a class="layui-btn cancelBtn" class="layui-btn layui-btn-primary" id="closeBtn">取消</a>
+        </div>
+    </div>
+</form>
+<script>
+
+    var optionType='addNode';
+    layui.use(['laydate','form','layer'], function () {
+        var laydate = layui.laydate;
+        var layer =layui.layer;
+        var form =layui.form;
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#userEnabledTime', //指定元素
+            format: 'yyyy-MM-dd HH:mm:ss'
+        });
+        laydate.render({
+            elem: '#userInvalidTime', //指定元素
+            format: 'yyyy-MM-dd HH:mm:ss'
+        });
+        form.on('submit(*)', function (data) {
+            $.ajax({
+                url: contextPath + "/secMenuPerm/saveMenuPerm",
+                data: data.field,
+                type: 'post',
+                success: function (res) {
+                    if (res.resultInfo.code == 0) {
+                        layer.msg("保存成功", {time: 2000}, function () {
+                            var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
+                            parent.updateTreeNode(res.data,optionType);
+                            parent.layer.close(index);
+                        })
+                    }
+                }
+            });
+            return false; //阻止表单跳转。如果需要表单跳转，去掉这段即可。
+        });
+    });
+
+
+    $("#closeBtn").click(function(){
+        var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
+        parent.layer.close(index);
+    });
+
+    function setData(data) {
+       var form=layui.form;
+       var formData=$("#nodeForm").serializeObject();
+        for(var i in formData){
+            formData[i]=data[i];
+        }
+        form.val('node',formData)
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+server:
+  #服务注册中心端口号
+  port: 8787
+eureka:
+  instance:
+    #服务注册中心实例的主机名
+    hostname: localhost
+  client:
+    #是否向服务注册中心注册自己
+    register-with-eureka: false
+    #由于自己就是服务器，不需要注册到自己
+    fetch-registry: false
+    service-url:
+      #服务注册中心的配置内容，指定服务注册中心的位置
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+spring:
+  application:
+    name: microservice-server-security
+  #通过下面配置就可以给Eureka Server添加基于http basic的认证了,springboot2.0
+  security:
+    user:
+      #配置登录的账号是samphin
+      name: samphin
+      #配置登录的密码是samphin123
+      password: samphin123
+logging:
+  level:
+    #org.springframework.web: debug
+    root: warn

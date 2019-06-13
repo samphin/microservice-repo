@@ -1,0 +1,69 @@
+server:
+  #服务注册中心端口号
+  port: 8058
+eureka:
+  instance:
+    #服务注册中心实例的主机名
+    hostname: localhost
+    #表示将自己IP注册到服务中心
+    prefer-ip-address: true
+    #自定义元数据,key/value都可以随便写
+  client:
+    #是否向服务注册中心注册自己
+    register-with-eureka: true
+    #由于自己就是客户端，需要向服务器注册信息
+    fetch-registry: true
+    #设置向服务中心发起心跳的时间（s）
+    registry-fetch-interval-seconds: 50
+    service-url:
+      #服务注册中心的配置内容，指定服务注册中心的位置
+      defaultZone: http://samphin:samphin123@localhost:8787/eureka/
+spring:
+  application:
+    name: microservice-rabbit
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+    #生产端
+    publisher-confirms: true
+    publisher-returns: true
+    template:
+      mandatory: true
+    #消费者
+    listener:
+      simple:
+        acknowledge-mode: manual
+        #初始连接数量
+        concurrency: 5
+        #最大连接数量
+        max-concurrency: 10
+        #限流
+        prefetch: 1
+   #用Redis存储RabbitMQ获取的消息
+  redis:
+    #Redis数据库索引（默认为0）
+    database: 0
+    #Redis服务器地址
+    host: localhost
+    #Redis服务器验证密码
+    password: foobared
+    #Redis服务器连接端口
+    port: 6379
+    #连接超时时间（毫秒）
+    timeout: 0
+    pool:
+      #连接池最大连接数（使用负值表示没有限制）
+      max-active: 8
+      #连接池最大阻塞等待时间（使用负值表示没有限制）
+      max-wait: -1
+      #连接池中的最大空闲连接
+      max-idle: 8
+      #连接池中的最小空闲连接
+      min-idle: 0
+logging:
+  level:
+    org.springframework.web: debug
+    root: warn

@@ -1,0 +1,42 @@
+server:
+  #服务注册中心端口号
+  port: 8088
+eureka:
+  instance:
+    #服务注册中心实例的主机名
+    hostname: localhost
+    #表示将自己IP注册到服务中心
+    prefer-ip-address: true
+    #自定义元数据,key/value都可以随便写
+  client:
+    #是否向服务注册中心注册自己
+    register-with-eureka: true
+    #由于自己就是客户端，需要向服务器注册信息
+    fetch-registry: true
+    #设置向服务中心发起心跳的时间（s）
+    registry-fetch-interval-seconds: 50
+    service-url:
+      #服务注册中心的配置内容，指定服务注册中心的位置
+      defaultZone: http://samphin:samphin123@localhost:8787/eureka/
+spring:
+  application:
+    name: microservice-archive-trace
+  #添加微服务链路跟踪
+  zipkin:
+    base-url: http://localhost:8099/
+  sleuth:
+    sampler:
+      percentage: 1.0
+  datasource: 
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/archives?useUnicode=true&amp;characterEncoding=utf-8
+    username: root
+    password: root
+    schema: classpath:initSql/mysql/schema.sql
+    data: classpath:initSql/mysql/data.sql
+    initialize: false         #是否初始化数据库
+    continueOnError: false    #有了错误是否继续运行  
+logging:
+  level:
+    root: INFO
+    org.springframework.web.servlet.DispatcherServlet: DEBUG

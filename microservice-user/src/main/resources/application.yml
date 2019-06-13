@@ -1,0 +1,51 @@
+server:
+  #服务注册中心端口号
+  port: 8001
+  context-path: /microservice-user
+spring:
+  application:
+    name: microservice-user
+  datasource: 
+    driver-class-name: com.mysql.jdbc.Driver
+    #microservice是自定义数据库名称，可以改，其他保持不变，5.7默认采用SSL配置，如果没有配置，就将useSSL=false
+    url: jdbc:mysql://localhost:3306/microservice?useUnicode=true&characterEncoding=utf8&useSSL=false&allowMultiQueries=true
+    username: root
+    password: root
+    initialize: false         #是否初始化数据库
+    continueOnError: false   #有了错误是否继续运行
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+  redis:
+    # Redis数据库索引(默认为0)
+    database: 0
+    # Redis服务器地址
+    host: 127.0.0.1
+    # Redis服务器连接端口
+    port: 6379
+    # Redis服务器连接密码(默认为空，我现在设置了密码为foobared)
+    password: foobared
+    # Redis连接超时时间（毫秒）
+    timeout: 0
+    pool:
+      # 连接池最大连接数（使用负值表示没有限制）
+      max-active: 8
+      # 连接池最大阻塞等待时间（使用负值表示没有限制）
+      max-wait: -1
+      # 连接池中的最大空闲连接
+      max-idle: 8
+      # 连接池中的最小空闲连接
+      min-idle: 0
+# slf4j日志配置
+logging: 
+      # 配置级别
+      level:
+        #分包配置级别，即不同的目录下可以使用不同的级别
+        org.common.eureka: error
+        org.springframework.web: debug
+        root: warn
+      # 在不指定路径，只指定输出日志的文件名，默认输出至当前项目下
+      # 若指定，则会输出至指定目录下
+      file: D:/springboot.log

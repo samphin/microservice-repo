@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户管理系统</title>
+    <script src="Script/jquery-1.10.2.min.js"></script>
+    <script src="index.js"></script>
+    <link href="index.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+    <div class="base-title">
+        <img src="images/title/title.png" id="title-img" />
+    </div>
+</div>
+
+<div class="main">
+    <div class="leftContent">
+        <div class="menuList">
+            <ul>
+                <li ><a src="role/user_list.html" href="javacript:void(0);">用户管理</a></li>
+                <li class="active"><a src="role/role_manage.html" href="javacript:void(0);">角色管理</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="rightContent">
+        <iframe id="mainFrame" frameborder="0" src="role/role_manage.html"
+                style="width: 100%; height: 100%;display: block;"></iframe>
+    </div>
+</div>
+</body>
+</html>

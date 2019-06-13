@@ -1,0 +1,33 @@
+server:
+  #服务注册中心端口号
+  port: 8040
+  
+spring:
+  application:
+    name: microservice-zuul
+eureka:
+  client:
+    service-url:
+      #服务注册中心的配置内容，指定服务注册中心的位置
+      defaultZone: http://samphin:samphin123@localhost:8787/eureka/
+zuul:
+  #忽略框架默认的服务映射路径
+  ignored-services:
+    "*"
+  #不忽略框架与权限相关的头信息
+  ignore-security-headers: false 
+  routes:
+    user:
+      path: /user-proxy/**
+      service-id: microservice-user
+    #给档案系统添加路由操作
+    archive:
+      path: /archive-proxy/**
+      service-id: microservice-archive-ribbon
+    #给档案系统添加路由操作
+    aggregation:
+      path: /aggregation-proxy/**
+      service-id: microservice-zuul-aggregation
+
+
+

@@ -1,0 +1,35 @@
+server:
+  port: 8099
+#解决The bean 'characterEncodingFilter',
+#defined in class path resource [zipkin/autoconfigure/ui/ZipkinUiAutoConfiguration.class],
+#could not be registered. A bean with that name has already been defined in class path resource
+#[org/springframework/boot/autoconfigure/web/servlet/HttpEncodingAutoConfiguration.class] and overriding is disabled.Action:
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: microservice-zipkin-Server
+#解决IllegalArgumentException:
+#Prometheus requires that all meters with the same name have the same set of tag keys.
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false
+eureka:
+  instance:
+    #服务注册中心实例的主机名
+    hostname: localhost
+    #表示将自己IP注册到服务中心
+    prefer-ip-address: true
+    #自定义元数据,key/value都可以随便写
+  client:
+    #是否向服务注册中心注册自己
+    register-with-eureka: true
+    #由于自己就是客户端，需要向服务器注册信息
+    fetch-registry: true
+    #设置向服务中心发起心跳的时间（s）
+    registry-fetch-interval-seconds: 50
+    service-url:
+      #服务注册中心的配置内容，指定服务注册中心的位置
+      defaultZone: http://samphin:samphin123@localhost:8787/eureka/

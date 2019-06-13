@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.common.redis.mapper.OaFjmlslMapper" >
+  <resultMap id="BaseResultMap" type="org.common.redis.entity.OaFjmlsl" >
+    <id column="FJMLSLID" property="fjmlslid" jdbcType="VARCHAR" />
+    <result column="FJMLID" property="fjmlid" jdbcType="VARCHAR" />
+    <result column="FJMLMC" property="fjmlmc" jdbcType="VARCHAR" />
+    <result column="FMLID" property="fmlid" jdbcType="VARCHAR" />
+    <result column="MLCJ" property="mlcj" jdbcType="VARCHAR" />
+    <result column="XH" property="xh" jdbcType="DECIMAL" />
+    <result column="YWLBBM" property="ywlbbm" jdbcType="VARCHAR" />
+    <result column="SFBX" property="sfbx" jdbcType="DECIMAL" />
+    <result column="CLLY" property="clly" jdbcType="VARCHAR" />
+    <result column="ZHBM" property="zhbm" jdbcType="VARCHAR" />
+    <result column="JGDM" property="jgdm" jdbcType="VARCHAR" />
+    <result column="NF" property="nf" jdbcType="DECIMAL" />
+    <result column="YWID" property="ywid" jdbcType="VARCHAR" />
+    <result column="SFYQYJ" property="sfyqyj" jdbcType="VARCHAR" />
+    <result column="DYBDURL" property="dybdurl" jdbcType="VARCHAR" />
+    <result column="SFSW" property="sfsw" jdbcType="VARCHAR" />
+    <result column="CJRID" property="cjrid" jdbcType="VARCHAR" />
+    <result column="CJRMC" property="cjrmc" jdbcType="VARCHAR" />
+    <result column="CJSJ" property="cjsj" jdbcType="TIMESTAMP" />
+    <result column="ISSHARE" property="isshare" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    FJMLSLID, FJMLID, FJMLMC, FMLID, MLCJ, XH, YWLBBM, SFBX, CLLY, ZHBM, JGDM, NF, YWID, 
+    SFYQYJ, DYBDURL, SFSW, CJRID, CJRMC, CJSJ, ISSHARE
+  </sql>
+  
+  <select id="selectAll" parameterType="java.util.Map" resultMap="BaseResultMap">
+  	select  <include refid="Base_Column_List" /> from OA_FJMLSL
+    <where>
+    	<if test="fjmlmc!=null and fjmlmc!=''">
+    		fjmlmc like '%'||#{fjmlmc}||'%'
+    	</if>
+    	<if test="cjrmc!=null and cjrmc!=''">
+    		and cjrmc like '%'||#{cjrmc}||'%'
+    	</if>
+    </where>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from OA_FJMLSL
+    where FJMLSLID = #{fjmlslid,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from OA_FJMLSL
+    where FJMLSLID = #{fjmlslid,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="org.common.redis.entity.OaFjmlsl" >
+    insert into OA_FJMLSL (FJMLSLID, FJMLID, FJMLMC, 
+      FMLID, MLCJ, XH, YWLBBM, 
+      SFBX, CLLY, ZHBM, JGDM, 
+      NF, YWID, SFYQYJ, DYBDURL, 
+      SFSW, CJRID, CJRMC, 
+      CJSJ, ISSHARE)
+    values (#{fjmlslid,jdbcType=VARCHAR}, #{fjmlid,jdbcType=VARCHAR}, #{fjmlmc,jdbcType=VARCHAR}, 
+      #{fmlid,jdbcType=VARCHAR}, #{mlcj,jdbcType=VARCHAR}, #{xh,jdbcType=DECIMAL}, #{ywlbbm,jdbcType=VARCHAR}, 
+      #{sfbx,jdbcType=DECIMAL}, #{clly,jdbcType=VARCHAR}, #{zhbm,jdbcType=VARCHAR}, #{jgdm,jdbcType=VARCHAR}, 
+      #{nf,jdbcType=DECIMAL}, #{ywid,jdbcType=VARCHAR}, #{sfyqyj,jdbcType=VARCHAR}, #{dybdurl,jdbcType=VARCHAR}, 
+      #{sfsw,jdbcType=VARCHAR}, #{cjrid,jdbcType=VARCHAR}, #{cjrmc,jdbcType=VARCHAR}, 
+      #{cjsj,jdbcType=TIMESTAMP}, #{isshare,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="org.common.redis.entity.OaFjmlsl" >
+    insert into OA_FJMLSL
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="fjmlslid != null" >
+        FJMLSLID,
+      </if>
+      <if test="fjmlid != null" >
+        FJMLID,
+      </if>
+      <if test="fjmlmc != null" >
+        FJMLMC,
+      </if>
+      <if test="fmlid != null" >
+        FMLID,
+      </if>
+      <if test="mlcj != null" >
+        MLCJ,
+      </if>
+      <if test="xh != null" >
+        XH,
+      </if>
+      <if test="ywlbbm != null" >
+        YWLBBM,
+      </if>
+      <if test="sfbx != null" >
+        SFBX,
+      </if>
+      <if test="clly != null" >
+        CLLY,
+      </if>
+      <if test="zhbm != null" >
+        ZHBM,
+      </if>
+      <if test="jgdm != null" >
+        JGDM,
+      </if>
+      <if test="nf != null" >
+        NF,
+      </if>
+      <if test="ywid != null" >
+        YWID,
+      </if>
+      <if test="sfyqyj != null" >
+        SFYQYJ,
+      </if>
+      <if test="dybdurl != null" >
+        DYBDURL,
+      </if>
+      <if test="sfsw != null" >
+        SFSW,
+      </if>
+      <if test="cjrid != null" >
+        CJRID,
+      </if>
+      <if test="cjrmc != null" >
+        CJRMC,
+      </if>
+      <if test="cjsj != null" >
+        CJSJ,
+      </if>
+      <if test="isshare != null" >
+        ISSHARE,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="fjmlslid != null" >
+        #{fjmlslid,jdbcType=VARCHAR},
+      </if>
+      <if test="fjmlid != null" >
+        #{fjmlid,jdbcType=VARCHAR},
+      </if>
+      <if test="fjmlmc != null" >
+        #{fjmlmc,jdbcType=VARCHAR},
+      </if>
+      <if test="fmlid != null" >
+        #{fmlid,jdbcType=VARCHAR},
+      </if>
+      <if test="mlcj != null" >
+        #{mlcj,jdbcType=VARCHAR},
+      </if>
+      <if test="xh != null" >
+        #{xh,jdbcType=DECIMAL},
+      </if>
+      <if test="ywlbbm != null" >
+        #{ywlbbm,jdbcType=VARCHAR},
+      </if>
+      <if test="sfbx != null" >
+        #{sfbx,jdbcType=DECIMAL},
+      </if>
+      <if test="clly != null" >
+        #{clly,jdbcType=VARCHAR},
+      </if>
+      <if test="zhbm != null" >
+        #{zhbm,jdbcType=VARCHAR},
+      </if>
+      <if test="jgdm != null" >
+        #{jgdm,jdbcType=VARCHAR},
+      </if>
+      <if test="nf != null" >
+        #{nf,jdbcType=DECIMAL},
+      </if>
+      <if test="ywid != null" >
+        #{ywid,jdbcType=VARCHAR},
+      </if>
+      <if test="sfyqyj != null" >
+        #{sfyqyj,jdbcType=VARCHAR},
+      </if>
+      <if test="dybdurl != null" >
+        #{dybdurl,jdbcType=VARCHAR},
+      </if>
+      <if test="sfsw != null" >
+        #{sfsw,jdbcType=VARCHAR},
+      </if>
+      <if test="cjrid != null" >
+        #{cjrid,jdbcType=VARCHAR},
+      </if>
+      <if test="cjrmc != null" >
+        #{cjrmc,jdbcType=VARCHAR},
+      </if>
+      <if test="cjsj != null" >
+        #{cjsj,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isshare != null" >
+        #{isshare,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="org.common.redis.entity.OaFjmlsl" >
+    update OA_FJMLSL
+    <set >
+      <if test="fjmlid != null" >
+        FJMLID = #{fjmlid,jdbcType=VARCHAR},
+      </if>
+      <if test="fjmlmc != null" >
+        FJMLMC = #{fjmlmc,jdbcType=VARCHAR},
+      </if>
+      <if test="fmlid != null" >
+        FMLID = #{fmlid,jdbcType=VARCHAR},
+      </if>
+      <if test="mlcj != null" >
+        MLCJ = #{mlcj,jdbcType=VARCHAR},
+      </if>
+      <if test="xh != null" >
+        XH = #{xh,jdbcType=DECIMAL},
+      </if>
+      <if test="ywlbbm != null" >
+        YWLBBM = #{ywlbbm,jdbcType=VARCHAR},
+      </if>
+      <if test="sfbx != null" >
+        SFBX = #{sfbx,jdbcType=DECIMAL},
+      </if>
+      <if test="clly != null" >
+        CLLY = #{clly,jdbcType=VARCHAR},
+      </if>
+      <if test="zhbm != null" >
+        ZHBM = #{zhbm,jdbcType=VARCHAR},
+      </if>
+      <if test="jgdm != null" >
+        JGDM = #{jgdm,jdbcType=VARCHAR},
+      </if>
+      <if test="nf != null" >
+        NF = #{nf,jdbcType=DECIMAL},
+      </if>
+      <if test="ywid != null" >
+        YWID = #{ywid,jdbcType=VARCHAR},
+      </if>
+      <if test="sfyqyj != null" >
+        SFYQYJ = #{sfyqyj,jdbcType=VARCHAR},
+      </if>
+      <if test="dybdurl != null" >
+        DYBDURL = #{dybdurl,jdbcType=VARCHAR},
+      </if>
+      <if test="sfsw != null" >
+        SFSW = #{sfsw,jdbcType=VARCHAR},
+      </if>
+      <if test="cjrid != null" >
+        CJRID = #{cjrid,jdbcType=VARCHAR},
+      </if>
+      <if test="cjrmc != null" >
+        CJRMC = #{cjrmc,jdbcType=VARCHAR},
+      </if>
+      <if test="cjsj != null" >
+        CJSJ = #{cjsj,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isshare != null" >
+        ISSHARE = #{isshare,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where FJMLSLID = #{fjmlslid,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="org.common.redis.entity.OaFjmlsl" >
+    update OA_FJMLSL
+    set FJMLID = #{fjmlid,jdbcType=VARCHAR},
+      FJMLMC = #{fjmlmc,jdbcType=VARCHAR},
+      FMLID = #{fmlid,jdbcType=VARCHAR},
+      MLCJ = #{mlcj,jdbcType=VARCHAR},
+      XH = #{xh,jdbcType=DECIMAL},
+      YWLBBM = #{ywlbbm,jdbcType=VARCHAR},
+      SFBX = #{sfbx,jdbcType=DECIMAL},
+      CLLY = #{clly,jdbcType=VARCHAR},
+      ZHBM = #{zhbm,jdbcType=VARCHAR},
+      JGDM = #{jgdm,jdbcType=VARCHAR},
+      NF = #{nf,jdbcType=DECIMAL},
+      YWID = #{ywid,jdbcType=VARCHAR},
+      SFYQYJ = #{sfyqyj,jdbcType=VARCHAR},
+      DYBDURL = #{dybdurl,jdbcType=VARCHAR},
+      SFSW = #{sfsw,jdbcType=VARCHAR},
+      CJRID = #{cjrid,jdbcType=VARCHAR},
+      CJRMC = #{cjrmc,jdbcType=VARCHAR},
+      CJSJ = #{cjsj,jdbcType=TIMESTAMP},
+      ISSHARE = #{isshare,jdbcType=VARCHAR}
+    where FJMLSLID = #{fjmlslid,jdbcType=VARCHAR}
+  </update>
+</mapper>

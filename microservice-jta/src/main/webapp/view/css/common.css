@@ -1,0 +1,26 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+}
+.blue-skin .layui-layer-title{
+    background: #2075e0;
+    color:#fff;
+}
+.submitBtn,.layui-layer-btn .submitBtn,.blue-skin .layui-layer-btn0{
+    background: #01AAED;
+    height: 38px;
+    line-height: 38px;
+    color:#fff;
+    padding: 0 18px;
+}
+.cancelBtn,.layui-layer-btn .cancelBtn,.blue-skin .layui-layer-btn1{
+    height: 38px;
+    line-height: 38px;
+    background: #9F9F9F;
+    color:#fff;
+    padding: 0 18px;
+}
