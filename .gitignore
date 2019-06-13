@@ -1,5 +1,14 @@
-*/target
-*/idea
-*/logs
-*/.factorypath
-*/*.iml
+### IntelliJ IDEA ###
+.gitee
+.idea
+*.iws
+*.iml
+*.ipr
+*/logs/
+
+HELP.md
+/target/
+*.class
+target/
+*.iml
+*.md
