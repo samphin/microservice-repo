@@ -28,14 +28,13 @@ spring:
     sampler:
       percentage: 1.0
   datasource: 
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/archives?useUnicode=true&amp;characterEncoding=utf-8
     username: root
     password: root
     schema: classpath:initSql/mysql/schema.sql
     data: classpath:initSql/mysql/data.sql
-    initialize: false         #是否初始化数据库
-    continueOnError: false    #有了错误是否继续运行  
+    continueOnError: false    #有了错误是否继续运行
 logging:
   level:
     root: INFO

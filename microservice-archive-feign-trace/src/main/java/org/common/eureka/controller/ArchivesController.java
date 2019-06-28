@@ -20,21 +20,26 @@ public class ArchivesController {
 	@Autowired
 	private UserFeignClient userFeignClient;
 	
-	@GetMapping("/user/findById/{id}")
-	public UserVo findById(@PathVariable String id){
+	@GetMapping(value = "/user/id/{id}")
+	public UserVo queryOne(@PathVariable String id){
 		//默认的方式请求
 		/*UserVo userVo = restTemplate.getForObject("http://127.0.0.1:8788/"+id, UserVo.class);
 		System.out.println(new Gson().toJson(userVo));*/
 		//用Feign声明式方式请求
-		UserVo user = this.userFeignClient.findById(id);
+		UserVo user = this.userFeignClient.queryOne(id);
 		
 		return user;
 	}
 	
-	@GetMapping("/user/findByName/{userName}")
-	public UserVo findByName(@PathVariable String userName){
+	@GetMapping(value = "/user/name/{userName}")
+	public String queryJsonByName(@PathVariable String userName){
 		//用Feign声明式方式请求
-		return this.userFeignClient.findByName("'%"+userName+"%'");
+		return this.userFeignClient.queryJsonByName("'%"+userName+"%'");
+	}
+
+	@GetMapping(value = "/user/all")
+	public String queryAll(){
+		return this.userFeignClient.queryAll();
 	}
 	
 	/**
