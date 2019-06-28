@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Import;
 
 @SpringBootConfiguration
 @Import({AutoConfigurationImportSelector.class})
+@EnableAutoConfiguration
 @ComponentScan({"org.samphin.stu.*"})
 public class MongoApp {
     public static void main(String[] args) {

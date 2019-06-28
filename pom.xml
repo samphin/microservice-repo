@@ -19,7 +19,6 @@
         <module>microservice-hystrix-mq</module>
         <module>microservice-jta</module>
         <module>microservice-mongo</module>
-        <module>microservice-solr</module>
         <module>microservice-rabbit</module>
         <module>microservice-rabbit-archive</module>
         <module>microservice-rabbit-consumer</module>
@@ -35,7 +34,6 @@
         <module>microservice-user8003</module>
         <module>microservice-zuul</module>
         <module>microservice-zuul-aggregation</module>
-        <module>java-study</module>
         <module>microservice-elasticsearch</module>
     </modules>
 
@@ -204,6 +202,12 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>3.7</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-collections4</artifactId>
+            <version>4.1</version>
         </dependency>
 
         <!-- groovy-->

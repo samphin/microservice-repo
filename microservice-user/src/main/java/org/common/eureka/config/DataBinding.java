@@ -13,10 +13,10 @@ import org.springframework.web.context.request.WebRequest;
  * 自定义日期、时间的类型绑定
  * @author samphin
  */
-public class DataBingding implements WebBindingInitializer {
+public class DataBinding implements WebBindingInitializer {
 
 	@Override
-	public void initBinder(WebDataBinder binder, WebRequest request) {
+	public void initBinder(WebDataBinder binder) {
 		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 		dateFormat.setLenient(false);
 		SimpleDateFormat datetimeFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
