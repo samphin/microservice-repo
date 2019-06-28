@@ -206,9 +206,15 @@
         </dependency>
 
         <dependency>
+<<<<<<< HEAD
             <groupId>commons-collections</groupId>
             <artifactId>commons-collections</artifactId>
             <version>3.2.2</version>
+=======
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-collections4</artifactId>
+            <version>4.1</version>
+>>>>>>> 18bcb0a375329e881ce4854be29ad8f294f9b469
         </dependency>
 
         <!-- groovy-->

@@ -21,7 +21,7 @@ spring:
       server:
         git:
           #配置Git仓库的地址
-          uri: https://gitee.com/samphin/spring-cloud-config-repo
+          uri: https://github.com/samphin/microservice-repo-config.git
           #配置文件所在目录
           search-paths: microservice-archive
           #设置全局clone Git仓库，启动配置中心服务端时，快速识别错误的配置源（例如：无效的Git仓库）
@@ -29,7 +29,7 @@ spring:
           #设置连接Git仓库时，超时时间
           timeout: 500
           #Git仓库的账号
-          username: 670610973@qq.com
+          username: samphin
           #Git仓库的密码
           password: _HappyDream98
         health:

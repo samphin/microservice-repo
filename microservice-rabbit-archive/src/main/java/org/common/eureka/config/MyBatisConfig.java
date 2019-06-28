@@ -37,7 +37,7 @@ public class MyBatisConfig {
 		ssfb.setDataSource(primaryDataSource());
 		//加入扫描Mapper.xml文件
 		 PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
-		 ssfb.setMapperLocations(resolver.getResources("classpath*:MybatisMapperXml/*Mapper.xml"));
+		 ssfb.setMapperLocations(resolver.getResources("classpath*:mappers/*Mapper.xml"));
 		return ssfb.getObject();
 	}	
 	

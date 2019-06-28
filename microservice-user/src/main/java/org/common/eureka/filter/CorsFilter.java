@@ -1,5 +1,22 @@
 package org.common.eureka.filter;
 
+<<<<<<< HEAD
+=======
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
+
+import javax.servlet.Filter;
+import javax.servlet.FilterChain;
+import javax.servlet.FilterConfig;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.commons.collections4.CollectionUtils;
+>>>>>>> 18bcb0a375329e881ce4854be29ad8f294f9b469
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 import org.common.eureka.controller.UserController;

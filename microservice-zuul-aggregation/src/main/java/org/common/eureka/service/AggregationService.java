@@ -12,6 +12,8 @@ import org.springframework.web.client.RestTemplate;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 
 import rx.Observable;
+import rx.Observer;
+import rx.observables.SyncOnSubscribe;
 
 @Service
 public class AggregationService {
@@ -21,24 +23,28 @@ public class AggregationService {
 
 	@HystrixCommand(fallbackMethod = "fallback")
 	public Observable<UserVo> getUserById(String id) {
+
 		// 创建一个被观察者
-		return Observable.create(observer -> {
-			// 请求用户微服务的/{id}端点
-			UserVo user = restTemplate.getForObject("http://microservice-user/findById/{id}", UserVo.class, id);
-			observer.onNext(user);
-			observer.onCompleted();
-		});
+//		return Observable.create(observer -> {
+//			// 请求用户微服务的/{id}端点
+//			UserVo user = restTemplate.getForObject("http://microservice-user/findById/{id}", UserVo.class, id);
+//			observer.onNext(user);
+//			observer.onCompleted();
+//		});
+
+		// 请求用户微服务的/{id}端点
+		UserVo user = restTemplate.getForObject("http://microservice-user/findById/{id}", UserVo.class, id);
+		Observable<UserVo> observer = Observable.just(user);
+		return observer.asObservable();
 	}
 
 	@HystrixCommand(fallbackMethod = "fallback")
 	public Observable<UserVo> getArchiveUserByUserId(String id) {
-		return Observable.create(observer -> {
-			// 请求档案微服务的/user/{id}端点
-			UserVo movieUser = restTemplate.getForObject("http://microservice-archive-ribbon/findById/{id}", UserVo.class,
-					id);
-			observer.onNext(movieUser);
-			observer.onCompleted();
-		});
+		// 请求档案微服务的/user/{id}端点
+		UserVo movieUser = restTemplate.getForObject("http://microservice-archive-ribbon/findById/{id}", UserVo.class,
+				id);
+		Observable<UserVo> observer = Observable.just(movieUser);
+		return observer.asObservable();
 	}
 
 	public UserVo fallback(String id) {
