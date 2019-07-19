@@ -1,5 +1,7 @@
 package org.common.eureka.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
 import org.common.eureka.dto.OrderDto;
 import org.springframework.beans.BeanUtils;
 
@@ -10,6 +12,7 @@ import java.util.Date;
 
 @Entity
 @Table(name = "t_order")
+@Data
 public class Order implements Serializable {
 
     @Id
@@ -26,68 +29,19 @@ public class Order implements Serializable {
 
     private BigDecimal price;
 
+    public Order(String id, String orderCode, String useCode, Date orderTime, BigDecimal price) {
+        this.id = id;
+        this.orderCode = orderCode;
+        this.useCode = useCode;
+        this.orderTime = orderTime;
+        this.price = price;
+    }
+
     @Transient
     private String[] auditors;
 
     public Order() {
         super();
-    }
-
-    public Order(String id, String orderCode, String useCode, Date orderTime, BigDecimal price) {
-        super();
-        this.id = id;
-        this.orderCode = orderCode;
-        this.useCode = useCode;
-        this.orderTime = orderTime;
-        this.price = price;
-    }
-
-    public String getOrderCode() {
-        return orderCode;
-    }
-
-    public void setOrderCode(String orderCode) {
-        this.orderCode = orderCode;
-    }
-
-    public Date getOrderTime() {
-        return orderTime;
-    }
-
-    public void setOrderTime(Date orderTime) {
-        this.orderTime = orderTime;
-    }
-
-    public BigDecimal getPrice() {
-        return price;
-    }
-
-    public void setPrice(BigDecimal price) {
-        this.price = price;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getUseCode() {
-        return useCode;
-    }
-
-    public void setUseCode(String useCode) {
-        this.useCode = useCode;
-    }
-
-    public String[] getAuditors() {
-        return auditors;
-    }
-
-    public void setAuditors(String[] auditors) {
-        this.auditors = auditors;
     }
 
     public Order buildOrder(OrderDto orderDto) {

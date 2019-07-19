@@ -26,7 +26,7 @@ import java.util.*;
 /**
  * 通地聚合管道来对订单里面的信息进行统计操作。
  */
-@SpringBootTest(classes = MongoApp.class)
+@SpringBootTest(classes = MongoApplication.class)
 @RunWith(SpringJUnit4ClassRunner.class)
 public class OrdersTest {
 

@@ -1,35 +1,19 @@
 package org.common.eureka.entity;
 
-import java.util.List;
+import lombok.Data;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+import java.util.List;
 
 /**
  * 评论信息
+ *
  * @author samphin
  */
-@Document(collection="comments")
+@Data
 public class Comments {
-	
-	@Id
-	private String cid;
 
-	public String getCid() {
-		return cid;
-	}
+    private String cid;
 
-	public void setCid(String cid) {
-		this.cid = cid;
-	}
+    private List<Comment> lists;
 
-	private List<Comment> lists;
-
-	public List<Comment> getLists() {
-		return lists;
-	}
-
-	public void setLists(List<Comment> lists) {
-		this.lists = lists;
-	}
 }

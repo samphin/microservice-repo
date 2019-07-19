@@ -18,7 +18,7 @@ import java.util.UUID;
 /**
  * 随机生成10万条订单信息
  */
-@SpringBootTest(classes = MongoApp.class)
+@SpringBootTest(classes = MongoApplication.class)
 @RunWith(SpringJUnit4ClassRunner.class)
 public class GeneratorOrdersTest {
 

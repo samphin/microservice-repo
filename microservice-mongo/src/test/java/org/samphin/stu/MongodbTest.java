@@ -36,7 +36,7 @@ import java.util.List;
 /**
  * MongoDB测试用例
  */
-@SpringBootTest(classes = MongoApp.class)
+@SpringBootTest(classes = MongoApplication.class)
 @RunWith(SpringJUnit4ClassRunner.class)
 public class MongodbTest {
 

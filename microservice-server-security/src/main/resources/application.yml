@@ -25,5 +25,5 @@ spring:
       password: samphin123
 logging:
   level:
-    #org.springframework.web: debug
-    root: warn
+    org.common.eureka: debug
+    root: info

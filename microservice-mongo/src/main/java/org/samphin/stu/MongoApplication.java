@@ -11,8 +11,8 @@ import org.springframework.context.annotation.Import;
 @Import({AutoConfigurationImportSelector.class})
 @EnableAutoConfiguration
 @ComponentScan({"org.samphin.stu.*"})
-public class MongoApp {
+public class MongoApplication {
     public static void main(String[] args) {
-        SpringApplication.run(MongoApp.class, args);
+        SpringApplication.run(MongoApplication.class, args);
     }
 }
