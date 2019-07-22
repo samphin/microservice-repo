@@ -10,6 +10,7 @@ import java.util.Map;
 
 import javax.annotation.Resource;
 
+import com.alibaba.fastjson.JSONArray;
 import org.apache.commons.lang3.time.DateFormatUtils;
 import org.common.eureka.RedisApplication;
 import org.common.eureka.entity.Article;
@@ -72,6 +73,24 @@ public class RedisTest {
 		} catch (IllegalAccessException e) {
 			e.printStackTrace();
 		}
+	}
+
+	/**
+	 * 获取已发布文章
+	 */
+	@Test
+	public void queryArticle() {
+		Assert.assertNotNull(redisTemplate);
+		String articleId = "article:313105798007398400";
+		//获取指定文章值信息
+		List<Object> articleList = redisTemplate.opsForHash().values(articleId);
+
+		System.out.println("articleList = " + JSONArray.toJSONString(articleList));
+
+		//获取指定文章key-value信息
+		Map<String,Object> articleMap = redisTemplate.opsForHash().entries(articleId);
+
+		System.out.println("articleMap = " + JSONObject.toJSONString(articleMap));
 	}
 
 	@Test
@@ -154,7 +173,7 @@ public class RedisTest {
 		}
 		// 根据用户查询订单信息
 		// 弹出队列中的订单信息
-		logger.info("==================订单信息保存成功！");
+		logger.info("==================订单信息查询成功！");
 	}
 
 	/**
@@ -168,6 +187,7 @@ public class RedisTest {
 		Map<String, Object> map = new HashMap<String, Object>();
 		Class<?> clazz = obj.getClass();
 		for (Field field : clazz.getDeclaredFields()) {
+			//打开私有访问
 			field.setAccessible(true);
 			String fieldName = field.getName();
 			Object value = field.get(obj);

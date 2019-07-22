@@ -46,7 +46,7 @@ spring:
           # 连接池中的最大空闲连接
           max-idle: 8
           # 连接池中的最小空闲连接
-          min-idle: 0
+          min-idle: 1
 logging:
   file: D:\microservice-redis.log
   org.common.eureka.controller : error

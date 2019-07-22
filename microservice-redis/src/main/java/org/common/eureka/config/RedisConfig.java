@@ -141,9 +141,7 @@ public class RedisConfig extends CachingConfigurerSupport {
         RedisSerializer<String> stringRedisSerializer = new StringRedisSerializer();
         redisTemplate.setKeySerializer(stringRedisSerializer);
         redisTemplate.setHashKeySerializer(stringRedisSerializer);
-//        JdkSerializationRedisSerializer jdkSerializationRedisSerializer = new JdkSerializationRedisSerializer();
-        // GenericJackson2JsonRedisSerializer jackson2JsonRedisSerializer = new
-        // GenericJackson2JsonRedisSerializer();
+        //此种序列化方式结果清晰、容易阅读、存储字节少、速度快，所以推荐更换
         Jackson2JsonRedisSerializer<?> jackson2JsonRedisSerializer = new Jackson2JsonRedisSerializer(Object.class);
         ObjectMapper om = new ObjectMapper();
         om.setVisibility(PropertyAccessor.ALL, JsonAutoDetect.Visibility.ANY);
