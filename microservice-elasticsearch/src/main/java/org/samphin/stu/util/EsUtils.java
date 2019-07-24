@@ -66,6 +66,24 @@ public class EsUtils {
     }
 
     /**
+     * 创建索引前绑定source值
+     * @param index
+     * @param source
+     * @return
+     */
+    public IndexRequest indexRequestGenerater(String index,Base source) {
+        IndexRequest indexRequest = null;
+        if (StringUtils.isEmpty(source.getIndex())) {
+            source.setIndex(index);
+        }
+        String[] tempArr = source.getClass().getName().split("\\.");
+        source.setType(tempArr[tempArr.length - 1]);
+        indexRequest = new IndexRequest(source.getIndex(), source.getType());
+        indexRequest.source(JSON.toJSONString(source), XContentType.JSON);
+        return indexRequest;
+    }
+
+    /**
      * @Description: 批量存储接口, boolean  表示保存成功与否
      * @Param: [bases]
      * @Return: boolean
@@ -75,6 +93,26 @@ public class EsUtils {
     public boolean batchSave(List<? extends Base> bases) {
         BulkRequest bulkRequest = new BulkRequest();
         bases.forEach(el -> bulkRequest.add(indexRequestGenerater(el)));
+        boolean flag = false;
+        try {
+            BulkResponse bulkItemResponses = client.bulk(bulkRequest, RequestOptions.DEFAULT);
+            flag = "created".equalsIgnoreCase(bulkItemResponses.getItems()[0].getResponse().getResult().name());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return flag;
+    }
+
+    /**
+     * @Description: 批量存储接口, boolean  表示保存成功与否
+     * @Param: [bases]
+     * @Return: boolean
+     * @Author: samphin
+     * @Date: 2019-6-12 21:10:42
+     */
+    public boolean batchSave(String index,List<? extends Base> bases) {
+        BulkRequest bulkRequest = new BulkRequest();
+        bases.forEach(base -> bulkRequest.add(indexRequestGenerater(index,base)));
         boolean flag = false;
         try {
             BulkResponse bulkItemResponses = client.bulk(bulkRequest, RequestOptions.DEFAULT);

@@ -23,8 +23,8 @@ spring:
 elasticsearch:
   host: 127.0.0.1
   port: 9200
-  username: esroot
-  password: esroot
+  username: elastic
+  password: changme
   schema: http
   connectNum: 10
   connectPerRoute: 30

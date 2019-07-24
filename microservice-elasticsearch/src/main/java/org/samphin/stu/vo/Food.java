@@ -1,11 +1,20 @@
 package org.samphin.stu.vo;
 
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
+import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Setter;
+import lombok.NoArgsConstructor;
+import org.samphin.stu.model.Base;
 
-public class Food {
-    //required parameter
-    private String id;
+import java.util.List;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Food extends Base {
+
+    private String foodId;
 
     private String name;
 
@@ -13,54 +22,19 @@ public class Food {
 
     private Integer count;
 
-    //optional parameter
     private String color;
 
-    private String size;
 
-    public Food(FoodBuilder builder){
-        this.id = builder.id;
-        this.name = builder.name;
-        this.weight = builder.weight;
-        this.count = builder.count;
+
+    public Food(String foodId, String name, Double weight, Integer count, String color) {
+        this.foodId = foodId;
+        this.name = name;
+        this.weight = weight;
+        this.count = count;
+        this.color = color;
     }
 
-    public static class FoodBuilder{
-        //required parameter
-        private String id;
+    private JSONObject more_info;
 
-        private String name;
-
-        private Double weight;
-
-        private Integer count;
-
-
-        //optional parameter
-        private String color;
-
-        private String size;
-
-
-        public FoodBuilder(String id,String name,Double weight,Integer count) {
-            this.id = id;
-            this.name = name;
-            this.weight = weight;
-            this.count = count;
-        }
-
-        public FoodBuilder setColor(String color) {
-            this.color = color;
-            return this;
-        }
-
-        public FoodBuilder setSize(String size) {
-            this.size = size;
-            return this;
-        }
-
-        public Food build(){
-            return new Food(this);
-        }
-    }
+    private List interest_food_agg;
 }
