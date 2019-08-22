@@ -10,8 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 //URL指明请求服务提供者的地址
 //如果配置configuration=FeignDisableHystrixConfig.class，表示当前UserFeignClient接口禁用断路器HystrixConfig
-@FeignClient(name = "microservice-user", fallbackFactory = FeignClientFallbackFactory.class, configuration = FeignDisableHystrixConfig.class)
-@Component
+@FeignClient(name = "microservice-user", fallbackFactory = FeignClientFallbackFactory.class)
 public interface UserFeignClient {
 
     @GetMapping("/user/json/{id}")

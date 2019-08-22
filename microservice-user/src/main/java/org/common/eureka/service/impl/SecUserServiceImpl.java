@@ -3,7 +3,7 @@ package org.common.eureka.service.impl;
 import java.util.List;
 import java.util.Map;
 
-import org.common.eureka.dao.SecUserMapper;
+import org.common.eureka.mapper.SecUserMapper;
 import org.common.eureka.entity.SecUser;
 import org.common.eureka.service.ISecUserService;
 import org.springframework.amqp.core.AmqpTemplate;

@@ -16,7 +16,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableTransactionManagement
-@MapperScan(basePackages={"org.common.eureka.dao"}, sqlSessionFactoryRef = "sqlSessionFactoryForPrimary")
+@MapperScan(basePackages={"org.common.eureka.mapper"}, sqlSessionFactoryRef = "sqlSessionFactoryForPrimary")
 public class MyBatisConfig {
 	
 	@Bean

@@ -11,7 +11,7 @@ eureka:
   client:
     service-url:
       #服务注册中心的配置内容，指定服务注册中心的位置
-      defaultZone: http://samphin:samphin123@localhost:8787/eureka/  
+      defaultZone: http://samphin:samphin123@localhost:8787/eureka/
 spring:
   application:
-    name: HystrixSystem
+    name: microservice-hystrix

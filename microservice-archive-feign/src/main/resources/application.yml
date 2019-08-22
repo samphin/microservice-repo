@@ -26,24 +26,33 @@ spring:
     loadbalancer:
       retry:
         enabled: true
+feign:
+  hystrix:
+    enabled: true # 启用消费方熔断机制
+  compression:
+    request:
+      enabled: true
+      mime-types: # 可压缩类型
+        - text/xml
+        - application/xml
+        - application/json
+      min-request-size: 2048 #内容超过2048字节就进行压缩
 ribbon:
   eureka:
     enabled: true
   http:
     client:
       enabled: true
-#用户微服务配置
-MICROSERVICE-USER:
-  ribbon:
-    # 请求连接超时时间
-    ConnectTimeout: 500
-    # 请求处理的超时时间
-    ReadTimeout: 2000
-    # 切换实例的重试次数
-    OkToRetryOnAllOperations: true
-    # 对当前实例重试次数
-    MaxAutoRetriesNextServer: 2
 logging:
   level:
     org.springframework.web: debug
     root: warn
+
+management:
+    endpoints:
+      web:
+        exposure:
+          exclude: '*'
+    endpoint:
+      health:
+        show-details: always

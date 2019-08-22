@@ -2,20 +2,22 @@ package org.common.eureka.controller;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import org.common.eureka.dao.IUserDao;
 import org.common.eureka.entity.SecUser;
+import org.common.eureka.service.ISecUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@RestController("/user")
+@RestController
+@RequestMapping("/user")
 public class UserController {
 
     @Autowired
-    private IUserDao userDao;
+    private ISecUserService userService;
 
     /**
      * @param id
@@ -23,7 +25,7 @@ public class UserController {
      */
     @GetMapping("/json/{id}")
     public String queryJsonById(@PathVariable String id) {
-        return JSONObject.toJSONString(this.userDao.getOne(id));
+        return JSONObject.toJSONString(this.userService.queryByPrimaryKey(id));
     }
 
     /**
@@ -34,17 +36,18 @@ public class UserController {
      */
     @GetMapping("/{id}")
     public SecUser queryOne(@PathVariable String id) {
-        return this.userDao.getOne(id);
+        System.out.println("microservice-user8001服务");
+        return this.userService.queryByPrimaryKey(id);
     }
 
     @GetMapping("/all")
     public String queryAll() {
-        List<SecUser> users = this.userDao.findAll();
+        List<SecUser> users = this.userService.queryAll(null);
         return JSONArray.toJSONString(users);
     }
 
     @GetMapping("/name/{userName}")
     public String queryJsonByName(@PathVariable String userName) {
-        return JSONObject.toJSONString(this.userDao.findUserByName(userName));
+        return JSONObject.toJSONString(this.userService.queryByUsername(userName));
     }
 }

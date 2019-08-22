@@ -3,7 +3,7 @@ package org.common.eureka.service.impl;
 import java.util.List;
 import java.util.Map;
 
-import org.common.eureka.dao.User1000wMapper;
+import org.common.eureka.mapper.User1000wMapper;
 import org.common.eureka.entity.User1000w;
 import org.common.eureka.service.IUser1000wService;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -4,11 +4,6 @@ server:
 spring:
   application:
     name: microservice-config-server
-  rabbitmq:
-      host: localhost
-      port: 5672
-      username: guest
-      password: guest
   cloud:
     #将Config Server也加入到消息总线中，从配置服务端刷新配置信息，
     #    #而不是从某一个服务客户端来刷新自己的，设置true即可

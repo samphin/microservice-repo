@@ -1,9 +1,10 @@
 package org.common.eureka.service.impl;
 
+import com.alibaba.fastjson.JSONObject;
 import com.google.common.base.Charsets;
 import com.google.common.hash.BloomFilter;
 import com.google.common.hash.Funnels;
-import org.common.eureka.dao.IOrderDao;
+import org.common.eureka.mapper.IOrderDao;
 import org.common.eureka.dto.OrderDto;
 import org.common.eureka.entity.Order;
 import org.common.eureka.service.IOrderService;
@@ -13,6 +14,7 @@ import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.ExampleMatcher;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
@@ -23,6 +25,9 @@ public class OrderServiceImpl implements IOrderService {
 
     @Autowired
     private IOrderDao orderDao;
+
+    @Autowired
+    private RedisTemplate<String,Object> redisTemplate;
 
     // 声时一个布隆过滤器
     private BloomFilter<CharSequence> bf = null;
@@ -77,6 +82,9 @@ public class OrderServiceImpl implements IOrderService {
 
         System.out.println("数据库中得到数据-----------" + System.currentTimeMillis());
         Order order = this.orderDao.getOne(orderId);
+
+        //将数据库查到的订单信息缓存到redis
+        redisTemplate.opsForValue().set("order:"+orderId, JSONObject.toJSONString(order));
         return order;
     }
 

@@ -30,13 +30,13 @@
 			<property name="trimStrings" value="true" />
 		</javaModelGenerator>
 		<!--生成SQLMAP文件 -->
-		<sqlMapGenerator targetPackage="org.common.eureka.dao.xml"
+		<sqlMapGenerator targetPackage="org.common.eureka.mapper.xml"
 			targetProject="target">
 			<property name="enableSubPackages" value="false" />
 		</sqlMapGenerator>
 		<!--生成Dao文件 可以配置 type="XMLMAPPER"生成xml的dao实现 context id="DB2Tables" 修改targetRuntime="MyBatis3" -->
 		<javaClientGenerator type="XMLMAPPER"
-			targetPackage="org.common.eureka.dao" targetProject="target">
+                             targetPackage="org.common.eureka.mapper" targetProject="target">
 			<property name="enableSubPackages" value="false" />
 		</javaClientGenerator>
 

@@ -3,7 +3,7 @@ package org.common.eureka.service.impl;
 import java.util.List;
 import java.util.Map;
 
-import org.common.eureka.dao.DwDatasetMapper;
+import org.common.eureka.mapper.DwDatasetMapper;
 import org.common.eureka.entity.DwDataset;
 import org.common.eureka.service.IDwDataSetService;
 import org.springframework.beans.factory.annotation.Autowired;
