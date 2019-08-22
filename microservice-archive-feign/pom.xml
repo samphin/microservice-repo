@@ -21,6 +21,12 @@
     </parent>
 
     <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.retry</groupId>
+            <artifactId>spring-retry</artifactId>
+        </dependency>
+
         <!-- jta -->
         <dependency>
             <groupId>javax.transaction</groupId>

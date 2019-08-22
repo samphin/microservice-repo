@@ -36,7 +36,7 @@ public class UserController {
      */
     @GetMapping("/{id}")
     public SecUser queryOne(@PathVariable String id) {
-        System.out.println("microservice-user8001服务");
+        System.out.println("microservice-user8003服务");
         return this.userService.queryByPrimaryKey(id);
     }
 

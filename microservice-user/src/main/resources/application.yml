@@ -4,6 +4,7 @@ server:
 spring:
   application:
     name: microservice-user
+  druid:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     #microservice是自定义数据库名称，可以改，其他保持不变，5.7默认采用SSL配置，如果没有配置，就将useSSL=false

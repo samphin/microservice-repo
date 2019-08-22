@@ -10,8 +10,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 /**
- * 回退类，专为Feign接口提供回退原因,服务降级
- * 防止雪崩效应，接口提供者接口出错，快速失败返回用户信息
+ * 回退类，专为Feign接口提供回退原因,快速熔断
+ * 防止雪崩效应，服务提供者因网络故障或找不到，快速熔断
  *
  * @author samphin
  */
@@ -22,6 +22,7 @@ public class FeignClientFallbackFactory implements FallbackFactory<UserFeignClie
 
     @Override
     public UserFeignClient create(Throwable cause) {
+        System.out.println("熔断原因 = " + cause);
         return new UserFeignClient() {
             @Override
             public String queryJsonById(String id) {

@@ -5,7 +5,7 @@
   http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.samphin.stu</groupId>
+    <groupId>org.common.eureka</groupId>
     <artifactId>microservice-user8001</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
@@ -21,7 +21,6 @@
     </parent>
 
     <dependencies>
-
         <!-- swagger 在线api文档 -->
         <dependency>
             <groupId>io.springfox</groupId>
@@ -45,7 +44,7 @@
         <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper-spring-boot-starter</artifactId>
-            <version>1.1.1</version>
+            <version>1.2.3</version>
         </dependency>
         <!-- mybatis代码生成工具 -->
         <dependency>

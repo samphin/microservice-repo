@@ -33,18 +33,13 @@ spring:
     username: root
     password: root
     continueOnError: false   #有了错误是否继续运行
-  jpa:
-      properties:
-        hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
-        #控制台打印SQL
-        hibernate.show_sql: true
-        #格式化sql语句
-        hibernate.format_sql: true
-        #指出是什么操作生成了该语句
-        hibernate.use_sql_comments: true
-        #根据表动态生成表结构
-        hibernate.ddl-auto: update
-      
+pagehelper:
+  auto-dialect: mysql
+  helper-dialect: mysql
+  params: count
+  reasonable: true
+  support-methods-arguments: true
+
 logging:
   level:
     org:

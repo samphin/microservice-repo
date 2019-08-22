@@ -25,7 +25,7 @@ spring:
   cloud:
     loadbalancer:
       retry:
-        enabled: true
+        enabled: true # 开启Spring Cloud的重试功能
 feign:
   hystrix:
     enabled: true # 启用消费方熔断机制
@@ -37,6 +37,15 @@ feign:
         - application/xml
         - application/json
       min-request-size: 2048 #内容超过2048字节就进行压缩
+#请求用户服务配置负载均衡配置：
+microservice-user:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule  #规则:随机________默认:轮循
+    ConnectTimeout: 250 # Ribbon的连接超时时间
+    ReadTimeout: 1000 # Ribbon的数据读取超时时间
+    OkToRetryOnAllOperations: true # 是否对所有操作都进行重试
+    MaxAutoRetriesNextServer: 1 # 切换实例的重试次数
+    MaxAutoRetries: 1 # 对当前实例的重试次数
 ribbon:
   eureka:
     enabled: true

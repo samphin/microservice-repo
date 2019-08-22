@@ -38,10 +38,6 @@ public class ArchivesFeignController{
     //获取用户信息
     @GetMapping("/user_info")
     public JSONObject queryUserInfo(@ModelAttribute UserDto userDto) {
-        //默认的方式请求
-		/*UserVo userVo = restTemplate.getForObject("http://127.0.0.1:8788/"+id, UserVo.class);
-		System.out.println(new Gson().toJson(userVo));*/
-        //用Feign声明式方式请求
         return this.archiveService.queryUserInfo(userDto);
     }
 }

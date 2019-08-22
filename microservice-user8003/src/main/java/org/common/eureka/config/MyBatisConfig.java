@@ -22,7 +22,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 public class MyBatisConfig {
 
 	//这个注解读取配置文件前缀为prefix的配置，将外部的配置文件与这里绑定
-	@ConfigurationProperties(prefix = "spring.druid")
+	@ConfigurationProperties(prefix = "spring.datasource")
 	//容器的开启与关闭
 	@Bean(initMethod = "init", destroyMethod = "close")
 	public DruidDataSource dataSource() {

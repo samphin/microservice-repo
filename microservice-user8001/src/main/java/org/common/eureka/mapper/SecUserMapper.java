@@ -1,10 +1,10 @@
 package org.common.eureka.mapper;
 
-import java.util.List;
-import java.util.Map;
-
 import org.apache.ibatis.annotations.Param;
 import org.common.eureka.entity.SecUser;
+
+import java.util.List;
+import java.util.Map;
 
 public interface SecUserMapper {
 	/**
