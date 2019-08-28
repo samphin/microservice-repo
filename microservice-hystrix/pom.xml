@@ -13,12 +13,25 @@
     <name>microservice-hystrix</name>
     <url>http://hystrix.microservice</url>
 
-    <!-- Inherit defaults from Parent Project -->
+    <!-- springBoot2.0-->
     <parent>
-        <groupId>org.samphin.stu</groupId>
-        <artifactId>microservices</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.2.RELEASE</version>
+        <relativePath/>
     </parent>
+    <!-- springCloud Greenwich.RC2 -->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Greenwich.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <dependencies>
         <!-- 可视化监控数据 -->

@@ -1,0 +1,51 @@
+spring:
+  cloud:
+    config:
+        name: microservice-config-client-bus # 定义要读取的资源文件名称
+        #ConfigServer地址，如果配置了discovery中的serviceId则不用再配置uri
+        #uri: http://localhost:8066
+        #profile对应config server所获取的配置文件中的{profile}
+        profile: dev
+        #指定Git仓库的分支，对应config server所获取的配置文件的{label} 
+        label: master
+        discovery:
+          #表示使用服务发现组件中的Config Server，而不自己指定Config Server的uri，默认false
+          #表示开启通过服务发现组件访问Config Server的功能
+          enabled: true
+          #指定微服务注册中心Eureka中ConfigServer的serviceId
+          service-id: MICROSERVICE-CONFIG-SERVER
+          #失败快速响应
+        fail-fast: true
+    stream:
+      default:
+        group: springCloudBus-${spring.application.name}-${spring.cloud.client.ip-address}-${server.port}
+      rabbit:
+        bindings:
+          springCloudBusInput:
+            consumer:
+              # 队列声明重试次数
+              queue-declaration-retries: 2000
+              # 重试间隔(ms)
+              recovery-interval: 5000
+              # 为true时，使用‘group’作为配置刷新队列的名称
+              queue-name-group-only: true
+  rabbitmq:
+    host: localhost
+    port: 5672  # RabbitMQ的监听端口
+    username: guest #RabbitMQ管理界面用户名称及密码
+    password: guest
+
+eureka:
+  client:
+    service-url:
+      #服务注册中心的配置内容，指定服务注册中心的位置
+      defaultZone: http://samphin:samphin123@localhost:8787/eureka/
+  instance:
+    # 在地址栏上使用IP地址进行显示
+    prefer-ip-address: true
+    instance-id: microservice-config-client-bus
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh

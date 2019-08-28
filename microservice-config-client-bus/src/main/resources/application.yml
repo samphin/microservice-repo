@@ -4,4 +4,4 @@ server:
 spring:
   application:
     #对应config server所获取的配置文件的{application}
-    name: microservice-config-client
+    name: microservice-config-client-bus

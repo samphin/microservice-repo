@@ -9,12 +9,11 @@
         <module>microservice-archive-feign-trace-elk</module>
         <module>microservice-archive-ribbon</module>
         <module>microservice-config-client</module>
+        <module>microservice-config-client-bus</module>
         <module>microservice-config-client-archive</module>
-        <module>microservice-config-client-refresh</module>
-        <module>microservice-config-client-refresh-cloud-bus</module>
-        <module>microservice-config-client-refresh-cloud-bus2</module>
-        <module>microservice-config-client-refresh-cloud-bus3</module>
-        <module>microservice-config-server</module>
+        <module>microservice-config-server1</module>
+		<module>microservice-config-server2</module>
+		<module>microservice-config-server3</module>
         <module>microservice-hystrix</module>
         <module>microservice-hystrix-mq</module>
         <module>microservice-jta</module>
@@ -116,7 +115,7 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
-        <!-- 微服务客户端信息监听器 -->
+        <!-- 微服务客户端健康检查 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
@@ -156,7 +155,6 @@
             <artifactId>spring-boot-starter-logging</artifactId>
         </dependency>
         <!-- springCloud core end -->
-
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>

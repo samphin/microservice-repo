@@ -1,6 +1,0 @@
-spring: 
-  datasource: 
-    #Git仓库的账号
-    username: 670610973@qq.com
-    #Git仓库的密码
-    password: '{cipher}4eb4a02c5cfa973a88a65da6b069bcfa7a260a714aa000dfe058425abc3d5a0c'
