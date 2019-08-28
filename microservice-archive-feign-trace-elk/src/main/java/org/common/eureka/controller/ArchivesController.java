@@ -13,41 +13,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class ArchivesController {
-<<<<<<< HEAD
-=======
 
->>>>>>> 18bcb0a375329e881ce4854be29ad8f294f9b469
     private final Logger logger = LoggerFactory.getLogger(ArchivesController.class);
 
     @Autowired
     private LoadBalancerClient loadBalancerClient;
-<<<<<<< HEAD
-    @Autowired
-    private UserFeignClient userFeignClient;
-
-    @GetMapping(value = "/user/id/{id}")
-    public UserVo queryOne(@PathVariable String id) {
-        //默认的方式请求
-		/*UserVo userVo = restTemplate.getForObject("http://127.0.0.1:8788/"+id, UserVo.class);
-		System.out.println(new Gson().toJson(userVo));*/
-        //用Feign声明式方式请求
-        UserVo user = this.userFeignClient.queryOne(id);
-
-        return user;
-    }
-
-    @GetMapping(value = "/user/name/{userName}")
-    public String queryJsonByName(@PathVariable String userName) {
-        //用Feign声明式方式请求
-        return this.userFeignClient.queryJsonByName("'%" + userName + "%'");
-    }
-
-    @GetMapping(value = "/user/all")
-=======
 
     @Autowired
     private UserFeignClient userFeignClient;
-
 
     @GetMapping("/user/json/{id}")
     public String queryJsonById(@PathVariable(value = "id") String id) {
@@ -65,19 +38,15 @@ public class ArchivesController {
     }
 
     @GetMapping("/user/all")
->>>>>>> 18bcb0a375329e881ce4854be29ad8f294f9b469
     public String queryAll() {
         return this.userFeignClient.queryAll();
     }
 
-<<<<<<< HEAD
-=======
     @GetMapping("/user/name/{userName}")
     public String queryJsonByName(@PathVariable(value = "userName") String userName) {
         return this.userFeignClient.queryJsonByName(userName);
     }
 
->>>>>>> 18bcb0a375329e881ce4854be29ad8f294f9b469
     /**
      * 打印负载均衡日志
      */

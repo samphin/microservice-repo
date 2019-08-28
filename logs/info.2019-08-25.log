@@ -1,0 +1,191 @@
+2019-08-25 07:35:06,477 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 07:40:06,480 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 07:45:06,483 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 07:50:06,484 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 07:55:06,486 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 08:00:06,488 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 08:05:06,488 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 08:10:06,490 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 08:15:06,490 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 08:20:06,492 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 08:25:06,493 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 08:30:06,496 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 08:35:06,497 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 08:40:06,500 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 08:45:06,501 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 08:50:06,503 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 08:55:06,504 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 09:00:06,506 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 09:05:06,508 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 09:10:06,509 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 09:15:06,510 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 09:20:06,511 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 09:25:06,512 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 09:30:06,513 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 09:35:06,514 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 09:40:06,516 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 09:45:06,517 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 09:50:06,518 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 09:55:06,519 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 10:00:06,520 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 10:05:06,522 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 10:10:06,523 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 10:15:06,524 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 10:20:06,526 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 10:25:06,527 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 10:30:06,528 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 10:35:06,530 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 10:40:06,531 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 10:45:06,533 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 10:50:06,534 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 10:55:06,537 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 11:00:06,538 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 11:05:06,539 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 11:10:06,540 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 11:15:06,542 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 11:20:06,542 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 11:25:06,544 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 11:30:06,545 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 11:35:06,547 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 11:40:06,548 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 11:45:06,550 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 11:50:06,551 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 11:55:06,553 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 12:00:06,555 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 12:05:06,556 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 12:10:06,557 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 12:15:06,559 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 12:20:06,560 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 14:13:03,357 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 14:18:03,358 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 17:08:59,642 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor 227 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-08-25 17:08:59,977 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 330 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$cae5af24] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-25 17:09:01,870 [restartedMain] INFO  o.c.eureka.ConfigServerApplication1 675 - No active profile set, falling back to default profiles: default
+2019-08-25 17:09:03,487 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker 330 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$cae5af24] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-25 17:09:04,096 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Initializing ProtocolHandler ["http-nio-8066"]
+2019-08-25 17:09:04,106 [restartedMain] INFO  o.a.catalina.core.StandardService 173 - Starting service [Tomcat]
+2019-08-25 17:09:04,106 [restartedMain] INFO  o.a.catalina.core.StandardEngine 173 - Starting Servlet engine: [Apache Tomcat/9.0.14]
+2019-08-25 17:09:04,113 [restartedMain] INFO  o.a.c.core.AprLifecycleListener 173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_92\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_92\bin;C:\Program Files\Java\jdk1.8.0_92\jre\bin;D:\apache-maven-3.6.1\bin;D:\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;;.]
+2019-08-25 17:09:04,485 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring embedded WebApplicationContext
+2019-08-25 17:09:04,486 [restartedMain] INFO  o.s.web.context.ContextLoader 296 - Root WebApplicationContext: initialization completed in 2596 ms
+2019-08-25 17:09:04,602 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource 121 - No URLs will be polled as dynamic configuration sources.
+2019-08-25 17:09:04,602 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource 122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-08-25 17:09:04,615 [restartedMain] INFO  c.n.config.DynamicPropertyFactory 281 - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@33cc9a1d
+2019-08-25 17:09:14,936 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource 121 - No URLs will be polled as dynamic configuration sources.
+2019-08-25 17:09:14,936 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource 122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-08-25 17:09:15,154 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor 171 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-25 17:09:17,441 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient 349 - Initializing Eureka in region us-east-1
+2019-08-25 17:09:17,503 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider 70 - Using JSON encoding codec LegacyJacksonJson
+2019-08-25 17:09:17,503 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider 71 - Using JSON decoding codec LegacyJacksonJson
+2019-08-25 17:09:17,645 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider 80 - Using XML encoding codec XStreamXml
+2019-08-25 17:09:17,646 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider 81 - Using XML decoding codec XStreamXml
+2019-08-25 17:09:17,832 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 17:09:18,894 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient 958 - Disable delta property : false
+2019-08-25 17:09:18,895 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient 959 - Single vip registry refresh property : null
+2019-08-25 17:09:18,896 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient 960 - Force full registry fetch : false
+2019-08-25 17:09:18,896 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient 961 - Application is null : false
+2019-08-25 17:09:18,896 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient 962 - Registered Applications size is zero : true
+2019-08-25 17:09:18,896 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient 964 - Application version is -1: true
+2019-08-25 17:09:18,897 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient 1047 - Getting all instance registry info from the eureka server
+2019-08-25 17:09:19,431 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient 1056 - The response status is 200
+2019-08-25 17:09:19,433 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient 1270 - Starting heartbeat executor: renew interval is: 30
+2019-08-25 17:09:19,436 [restartedMain] INFO  c.n.discovery.InstanceInfoReplicator 60 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-08-25 17:09:19,441 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient 449 - Discovery Client initialized at timestamp 1566724159439 with initial instances count: 0
+2019-08-25 17:09:19,444 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient 1305 - Saw local status change event StatusChangeEvent [timestamp=1566724159444, current=UP, previous=STARTING]
+2019-08-25 17:09:19,447 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient 826 - DiscoveryClient_MICROSERVICE-CONFIG-SERVER/PC-201906302211:microservice-config-server:8066: registering service...
+2019-08-25 17:09:19,471 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol 173 - Starting ProtocolHandler ["http-nio-8066"]
+2019-08-25 17:09:19,522 [restartedMain] INFO  o.c.eureka.ConfigServerApplication1 59 - Started ConfigServerApplication1 in 23.291 seconds (JVM running for 27.672)
+2019-08-25 17:09:19,568 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient 835 - DiscoveryClient_MICROSERVICE-CONFIG-SERVER/PC-201906302211:microservice-config-server:8066 - registration status: 204
+2019-08-25 17:09:22,160 [RMI TCP Connection(3)-192.168.199.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] 173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-25 17:09:22,160 [RMI TCP Connection(3)-192.168.199.1] INFO  o.s.web.servlet.DispatcherServlet 524 - Initializing Servlet 'dispatcherServlet'
+2019-08-25 17:09:22,169 [RMI TCP Connection(3)-192.168.199.1] INFO  o.s.web.servlet.DispatcherServlet 546 - Completed initialization in 9 ms
+2019-08-25 17:09:49,434 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient 958 - Disable delta property : false
+2019-08-25 17:09:49,434 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient 959 - Single vip registry refresh property : null
+2019-08-25 17:09:49,435 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient 960 - Force full registry fetch : false
+2019-08-25 17:09:49,435 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient 961 - Application is null : false
+2019-08-25 17:09:49,435 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient 962 - Registered Applications size is zero : true
+2019-08-25 17:09:49,436 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient 964 - Application version is -1: false
+2019-08-25 17:09:49,436 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient 1047 - Getting all instance registry info from the eureka server
+2019-08-25 17:09:49,487 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient 1056 - The response status is 200
+2019-08-25 17:14:18,902 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 17:19:18,903 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 17:24:18,905 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 17:29:18,906 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 17:34:18,908 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 17:39:18,910 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 17:44:18,912 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 17:49:18,914 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 17:54:18,914 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 17:59:18,916 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 18:04:18,918 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 18:09:18,921 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 18:14:18,922 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 18:19:18,923 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 18:24:18,925 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 18:29:18,927 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 18:34:18,930 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 18:39:18,931 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 18:44:18,932 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 18:49:18,935 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 18:54:18,936 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 18:59:18,936 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 19:04:18,937 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 19:09:18,938 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 19:14:18,939 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 19:19:18,941 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 19:24:18,943 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 19:29:18,945 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 19:34:18,947 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 19:39:18,948 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 19:44:18,948 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 19:49:18,950 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 19:54:18,951 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 19:59:18,953 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 20:04:18,954 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 20:09:18,956 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 20:14:18,957 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 20:19:18,958 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 20:24:18,959 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 20:29:18,961 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 20:34:18,962 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 20:39:18,964 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 20:44:18,966 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 20:49:18,967 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 20:54:18,968 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 20:59:18,969 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 21:04:18,971 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 21:09:18,973 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 21:14:18,975 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 21:19:18,977 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 21:24:18,978 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 21:29:18,979 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 21:34:18,982 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 21:39:18,983 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 21:44:18,985 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 21:49:18,988 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 21:54:18,990 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 21:59:18,993 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 22:04:18,995 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 22:09:18,997 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 22:14:18,999 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 22:19:19,002 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 22:24:19,003 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 22:29:19,005 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 22:34:19,008 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 22:39:19,009 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 22:44:19,011 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 22:49:19,014 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 22:54:19,017 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 22:59:19,019 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 23:04:19,021 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 23:09:19,024 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 23:14:19,026 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 23:19:19,027 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 23:24:19,030 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 23:29:19,031 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 23:34:19,033 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 23:39:19,036 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 23:44:19,037 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 23:49:19,040 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 23:54:19,042 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
+2019-08-25 23:59:19,044 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver 43 - Resolving eureka endpoints via configuration
