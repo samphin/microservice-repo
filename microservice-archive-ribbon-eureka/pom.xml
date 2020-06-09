@@ -6,11 +6,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.samphin.stu</groupId>
-    <artifactId>microservice-archive-ribbon</artifactId>
+    <artifactId>microservice-archive-ribbon-eureka</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
 
-    <name>microservice-archive-ribbon</name>
+    <name>microservice-archive-ribbon-eureka</name>
     <url>http://ribbon.archive.microservice</url>
 
     <!-- Inherit defaults from Parent Project -->

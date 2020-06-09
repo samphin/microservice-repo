@@ -1,27 +1,26 @@
 package org.common.eureka;
 
-import org.other.info.config.RibbonConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.ribbon.RibbonClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
-@EnableDiscoveryClient
+@EnableEurekaClient
 @SpringBootApplication
-@RibbonClient(name = "microservice-user", configuration = RibbonConfiguration.class)
+@EnableCircuitBreaker // 开启断路器功能，进行容错管理
+/*@EnableAutoConfiguration(exclude={
+		DataSourceAutoConfiguration.class,
+		JpaRepositoriesAutoConfiguration.class,
+		HibernateJpaAutoConfiguration.class})*/
+@RibbonClient(name = "microservice-user", configuration = TestConfiguration.class)
 public class ArchivesRibbonApplication {
 
-    /**
-     * 实现均衡负载注解
-     *
-     * @return
-     */
     @Bean
-    @LoadBalanced
+    @LoadBalanced//实现均衡负载注解
     public RestTemplate restTemplate() {
         return new RestTemplate();
     }

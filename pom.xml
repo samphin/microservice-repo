@@ -8,6 +8,8 @@
         <module>microservice-archive-feign-trace</module>
         <module>microservice-archive-feign-trace-elk</module>
         <module>microservice-archive-ribbon</module>
+        <module>microservice-archive-ribbon-eureka</module>
+        <module>microservice-archive-ribbon-hystrix</module>
         <module>microservice-config-client</module>
         <module>microservice-config-client-bus</module>
         <module>microservice-config-client-archive</module>
